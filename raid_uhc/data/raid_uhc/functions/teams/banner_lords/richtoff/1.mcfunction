@@ -1,0 +1,2 @@
+#Lorsque sa vie passe en dessous de 7.5♥, il égalise ses points de vie avec ceux de l’adversaire le plus proche, si son adversaire a moins de 7.5♥, celui ci est ralenti pendant 10 secondes (5 minutes de récupération)
+execute if score @s raid.life matches ..15 if score @s raid.cooldown matches 600.. run function raid_uhc:teams/banner_lords/richtoff/2
