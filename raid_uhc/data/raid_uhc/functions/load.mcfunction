@@ -16,9 +16,12 @@ scoreboard objectives add raid.knightsrevenant dummy
 
 scoreboard objectives add raid.start dummy
 scoreboard objectives add raid.cooldown dummy
+scoreboard objectives add raid.cooldown2 dummy
 scoreboard objectives add raid.death deathCount
 scoreboard objectives add raid.kill playerKillCount
 scoreboard objectives add raid.kills playerKillCount
 scoreboard objectives add raid.spell minecraft.used:minecraft:warped_fungus_on_a_stick
-scoreboard objectives add raid.shield minecraft.used:shield
+scoreboard objectives add raid.shield custom:damage_blocked_by_shield
 scoreboard objectives add raid.life health
+scoreboard objectives add raid.stat dummy
+scoreboard objectives add raid.sprint custom:sneak_time

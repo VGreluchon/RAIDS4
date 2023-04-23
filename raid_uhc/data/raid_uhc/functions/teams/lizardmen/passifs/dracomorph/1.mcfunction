@@ -1,0 +1,2 @@
+#Obtient une tête de dragon qui confère l’effet Résistance I quand la vie du joueur est inférieure à 6.5♥
+effect give @s[scores={raid.life=..13},nbt={Inventory:[{Slot:103b,id:"minecraft:dragon_head"}]}] resistance 2 0 true

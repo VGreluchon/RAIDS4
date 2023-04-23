@@ -1,0 +1,1 @@
+#A 80 minutes de jeu, le château des Banner Lords apparaît, les coordonnées de ce château leur sont données 90 secondes avant l’apparition de celui-ci. En haut du château se trouve une bannière, si elle est en la possession d’un Banner Lords, ils obtiennent tous un bonus de 5% de vitesse, 5% de force et 1 point d’armure.
