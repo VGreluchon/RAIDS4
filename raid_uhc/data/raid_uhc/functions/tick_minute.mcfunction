@@ -1,0 +1,1 @@
+	scoreboard players set #minute raid_uhc.data 0
