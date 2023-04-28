@@ -6,4 +6,4 @@ execute if score @s raid.spell matches 1 if score @s raid.cooldown matches ..179
 
 #Txt capacité prête ou non:
 execute if score @s raid.cooldown matches ..179 run title @s actionbar ["",{"text":"Adrenaline shot:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/180","color":"#0F6FD8"}]
-execute if score @s raid.cooldown matches 180.. run title @s actionbar ["",{"text":"Adrenaline shot: ","color":"#0F6FD8"},{"text":"Capacité prête","color":"gold"}]
+execute if score @s raid.cooldown matches 180.. run title @s actionbar ["",{"text":"Adrenaline shot: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]
