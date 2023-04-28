@@ -1,3 +1,4 @@
+function raid_uhc:teams/dark_elves/passif
 #Epinephrine shot: En utilisant son orbe de pouvoir, elle obtient les effets Force 2 et cécité pendant 10 secondes (5 minutes de délai de récupération)
 execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run function raid_uhc:teams/dark_elves/blind_seer/2
 execute unless score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run scoreboard players set @s raid.spell 0

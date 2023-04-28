@@ -1,3 +1,4 @@
+function raid_uhc:teams/dark_elves/passif
 #Fraternal link: En étant proche de Drexthar, il obtient 20% de dégâts en plus
 
 #Blood bros: Lorsqu’il a moins de 4♥, il se téléporte à Drexthar et obtient 6♥ d’absorption pendant 10 secondes (15 minutes de délai de récupération)

@@ -1,3 +1,4 @@
+function raid_uhc:teams/high_elves/passif
 #Loaded arrow: Sans tirer de flèches pendant 10 secondes, sa prochaine flèche fait tomber un éclair en atterrissant.
 
 

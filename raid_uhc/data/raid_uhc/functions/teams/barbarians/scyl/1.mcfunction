@@ -1,3 +1,5 @@
+function raid_uhc:teams/barbarians/passif
+
 #Dragon breath: En utilisant son orbe de pouvoir, elle lance une boule de souffle de dragon qui a les mêmes caractéristiques que celles lancées par l’Ender Dragon (4 minutes de délai de récupération)
 
 #Elle possède des élytres qui protègent autant qu’un plastron en fer Protection 4 + des feux d'artifice 

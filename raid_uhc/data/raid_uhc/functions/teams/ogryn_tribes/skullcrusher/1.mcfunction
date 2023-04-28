@@ -1,3 +1,4 @@
+function raid_uhc:teams/ogryn_tribes/passif
 #Armor weakening: En lançant son orbe de pouvoir sur un joueur, celui ci voit le niveau de protection d'une de ses pièce d'armure se réduire de 2 (5 minutes de délai de récupération)
 
 #En tuant un joueur, il obtient sa tête avec laquelle il pourra faire une golden Head qui lui rendra 6♥ une fois mangée.

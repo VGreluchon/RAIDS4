@@ -1,3 +1,4 @@
+function raid_uhc:teams/high_elves/passif
 #Samaritan rescue: Lorsqu’un de ses allié dans un rayon de 10 blocs a moins de 3♥, et qu’elle a plus de 4 pommes en or dans son inventaire, elle perd 4 pommes et son allié régénère rapidement 9 ♥ (20 minutes de délai de récupération)
 
 

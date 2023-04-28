@@ -1,3 +1,4 @@
+function raid_uhc:teams/dark_elves/passif
 #Fraternal link: En étant proche d’Inithwe (10 blocs), il obtient l’effet Resistance I.
 
 

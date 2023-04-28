@@ -1,3 +1,4 @@
+function raid_uhc:teams/sacred_order/passif
 #En dessous de 5 cœurs, elle obtient l’effet régénération.
 execute if score @s raid.life matches ..10 run effect give @s regeneration 3 0 true
 

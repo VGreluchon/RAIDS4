@@ -1,3 +1,4 @@
+function raid_uhc:teams/dwarves/passif
 #Les ennemis dans un rayon de 5 blocs sont ralentis
 execute as @a[distance=..5,scores={raid.dwarves=0}] run effect give @s slowness 2 0 true
 

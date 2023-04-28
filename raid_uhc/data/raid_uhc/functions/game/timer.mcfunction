@@ -1223,3 +1223,4 @@ execute if score #temps raid_uhc.data matches 1197 run team modify raid_uhc.side
 execute if score #temps raid_uhc.data matches 1198 run team modify raid_uhc.sidebar.1 suffix [{"text":"mps","color":"yellow"},{"text":" » ","color":"gray"},{"text":"19:58","color":"green"}]
 execute if score #temps raid_uhc.data matches 1199 run team modify raid_uhc.sidebar.1 suffix [{"text":"mps","color":"yellow"},{"text":" » ","color":"gray"},{"text":"19:59","color":"green"}]
 execute if score #temps raid_uhc.data matches 1200 run team modify raid_uhc.sidebar.1 suffix [{"text":"mps","color":"yellow"},{"text":" » ","color":"gray"},{"text":"20:00","color":"green"}]
+

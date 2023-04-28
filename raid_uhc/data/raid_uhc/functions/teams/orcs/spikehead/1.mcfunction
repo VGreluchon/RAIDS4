@@ -1,3 +1,4 @@
+function raid_uhc:teams/orcs/passif
 #Il a un casque en fer Protection 5, Épines 3
 
 #CLING CLING CLING: En utilisant son orbe de pouvoir, il immobilise les ennemis dans un rayon de 10 blocs et fait tomber une enclume sur eux. la hauteur d'où l'enclume tombe dépend de la distance entre Spikehead et les ennemis  (5 minutes de délai de récupération)

@@ -1,3 +1,4 @@
+function raid_uhc:teams/shadowkin/passif
 #Frog shifter: Avec son orbe de pouvoir, il alterne entre deux formes:
 #- La grenouille : il obtient les effet Jump Boost 3 et Vitesse II, après un saut, il obtient un effet de Force I pendant 3 secondes.
 

@@ -6,4 +6,4 @@
 	execute if score #minute raid_uhc.data matches 60.. run function raid_uhc:tick_minute
 
 #Others
-	execute as @a[sort=random] at @s run function raid_uhc:tick_second_players
+	execute if score #started raid_uhc.data matches 1.. run execute as @a[sort=random] at @s run function raid_uhc:game/players_seconds

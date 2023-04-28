@@ -5,6 +5,7 @@ scoreboard objectives add raid.sacredorder dummy
 scoreboard objectives add raid.barbarians dummy
 scoreboard objectives add raid.ogryntribes dummy
 scoreboard objectives add raid.lizardmen dummy
+scoreboard objectives add raid.lizardmen2 dummy
 scoreboard objectives add raid.shadowkin dummy
 scoreboard objectives add raid.skinwalkers dummy
 scoreboard objectives add raid.demonspawn dummy

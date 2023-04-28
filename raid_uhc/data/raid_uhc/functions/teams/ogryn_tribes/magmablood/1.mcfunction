@@ -1,3 +1,4 @@
+function raid_uhc:teams/ogryn_tribes/passif
 #Il est insensible au feu et donne cet insensibilité à ses alliés qui sont dans un rayon de 10 bloc
 effect give @s fire_resistance 99 0 true
 execute at @a[scores={raid.ogryntribes=1..},distance=..10] run effect give @s fire_resistance 3 0 true

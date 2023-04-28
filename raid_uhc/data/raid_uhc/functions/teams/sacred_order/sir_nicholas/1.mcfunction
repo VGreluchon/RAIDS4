@@ -1,3 +1,4 @@
+function raid_uhc:teams/sacred_order/passif
 #Gift hunt: collecte des cadeaux en tuant des monstres et des joueurs, en collectionnant ces cadeaux, il peut choisir des items exclusifs.
 
 #Liste des items qu'il peut s'acheter :

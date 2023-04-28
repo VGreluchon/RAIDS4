@@ -1,3 +1,4 @@
+function raid_uhc:teams/undead_hordes/passif
 #Omniscience: Lorsqu’il a moins de 3♥, il est mit en mode de jeu spectateur pendant 10 secondes (20 minutes de délai de récupération)
 
 #Lorsque son pouvoir est utilisé, il a 30 secondes pour décider s’il veut abandonner ce pouvoir pour avoir accès à 3♥ permanent supplémentaire.

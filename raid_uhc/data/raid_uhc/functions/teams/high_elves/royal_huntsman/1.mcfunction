@@ -1,3 +1,4 @@
+function raid_uhc:teams/high_elves/passif
 #Game tracking: Il possède une cible, qu’il peut retrouver en suivant la direction que sa boussole pointe, si son équipe tue sa cible, son équipe obtient 0.5♥ permanent en plus, puis une nouvelle cible est attribuée.
 
 #S’il reste pendant 30 secondes sur le trône du château des Banner Lords, il obtient une couronne qui lui confère les bonus de la bannière. Il doit être le premier à la récupérer

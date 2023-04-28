@@ -1,3 +1,4 @@
+function raid_uhc:teams/dwarves/passif
 #Runes collector: Au début de la partie,il choisit une rune pour son équipe.
 #En tuant un joueur, il peut choisir une rune supplémentaire, les runes sont des effets donnés à toute son équipe
 #Liste des runes:

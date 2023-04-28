@@ -1,3 +1,4 @@
+function raid_uhc:teams/sacred_order/passif
 #A chaque fois qu’une équipe est éliminée de la partie, il fait gagner aux membres de son équipe 0.5♥ permanent
 
 

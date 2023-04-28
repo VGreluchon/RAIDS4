@@ -1,3 +1,4 @@
+function raid_uhc:teams/knight_revenant/passif
 #Inextinguishable rage: Lorsqu’il a moins de 5♥, il devient invincible, et donne l’effet Fatigue 2 aux ennemis dans un rayon de 6 blocs pendant 7 secondes, ce pouvoir a un délai de récupération de 7 minutes.
 execute as @s[scores={raid.cooldown=420..,raid.life=..10}] run function raid_uhc:teams/knight_revenant/deathless/2
 

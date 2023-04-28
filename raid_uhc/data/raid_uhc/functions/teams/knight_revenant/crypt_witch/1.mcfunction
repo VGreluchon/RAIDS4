@@ -1,3 +1,4 @@
+function raid_uhc:teams/knight_revenant/passif
 #Souls collector: Elle choisit un pouvoir parmi les quatres ci-dessous, à chaque kill, elle peut en débloquer un autre.
 
 #Zombie: Il donne l’effet Hunger aux ennemis proches

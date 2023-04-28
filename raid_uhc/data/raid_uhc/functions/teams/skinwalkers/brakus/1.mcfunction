@@ -1,3 +1,4 @@
+function raid_uhc:teams/skinwalkers/passif
 #La nuit, il a l’effet Force I mais ne peut attaquer qu’en utilisant sa griffe (il ne l'a que la nuit, la griffe permet d'attaquer rapidement mais avec peu de dégâts)
 
 #En tuant un joueur, il gagne 1♥ permanent et régénère 4♥.
