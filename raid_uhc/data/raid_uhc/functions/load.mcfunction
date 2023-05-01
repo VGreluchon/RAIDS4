@@ -25,4 +25,5 @@ scoreboard objectives add raid.spell minecraft.used:minecraft:warped_fungus_on_a
 scoreboard objectives add raid.shield custom:damage_blocked_by_shield
 scoreboard objectives add raid.life health
 scoreboard objectives add raid.stat dummy
+scoreboard objectives add raid.data dummy
 scoreboard objectives add raid.sprint custom:sneak_time

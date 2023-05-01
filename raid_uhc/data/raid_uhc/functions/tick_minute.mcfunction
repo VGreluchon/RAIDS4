@@ -1,1 +1,1 @@
-	scoreboard players set #minute raid_uhc.data 0
+	scoreboard players set #minute raid.data 0
