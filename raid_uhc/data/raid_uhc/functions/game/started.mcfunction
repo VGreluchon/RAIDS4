@@ -2,7 +2,6 @@
 
 scoreboard players set #state raid.data 2
 scoreboard players set #started raid.data 1
-scoreboard players set #started raid.data 1
 
 ##Timer et Scoreboard
 scoreboard objectives setdisplay sidebar raid.sidebar

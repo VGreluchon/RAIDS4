@@ -7,7 +7,7 @@ scoreboard players set #state raid.data 1
 
 ##Timer et Scoreboard
 scoreboard objectives remove raid.sidebar
-scoreboard objectives add raid.sidebar dummy [{"text":"RAID UHC","color":"dark_red","bold":true},{"text":" V4","color":"gold","bold":true}]
+scoreboard objectives add raid.sidebar dummy [{"text":"RAID UHC","color":"red","bold":true},{"text":" V4","color":"gold","bold":true}]
 scoreboard players set ▬▬ raid.sidebar 7
 scoreboard players set Bo raid.sidebar 6
 scoreboard players set Ta raid.sidebar 5
@@ -53,3 +53,5 @@ team join raid.sidebar.0 ▬
 scoreboard players set #temps raid.data 1200
 scoreboard players set #episode raid.data 0
 function raid_uhc:game/started
+
+function raid_uhc:game/in-game/distrib

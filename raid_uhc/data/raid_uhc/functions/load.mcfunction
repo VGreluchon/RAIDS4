@@ -1,4 +1,3 @@
-
 scoreboard objectives add raid.bannerlords dummy
 scoreboard objectives add raid.highelves dummy
 scoreboard objectives add raid.sacredorder dummy
@@ -34,3 +33,18 @@ gamerule announceAdvancements false
 gamerule doImmediateRespawn true
 gamerule showDeathMessages false
 gamerule naturalRegeneration false
+
+team add raid.team.1
+team add raid.team.2
+team add raid.team.3
+team add raid.team.4
+team add raid.team.5
+team add raid.team.6
+team add raid.team.7
+team add raid.team.8
+team add raid.team.9
+team add raid.team.10
+team add raid.team.11
+team add raid.team.12
+team add raid.team.13
+team add raid.team.14
