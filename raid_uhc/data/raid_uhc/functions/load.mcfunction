@@ -28,6 +28,10 @@ scoreboard objectives add raid.stat dummy
 scoreboard objectives add raid.data dummy
 scoreboard objectives add raid.sprint custom:sneak_time
 scoreboard objectives add raid.bow minecraft.used:minecraft.bow
+scoreboard objectives add raid.trigger1 trigger
+scoreboard objectives add raid.trigger2 trigger
+scoreboard objectives add raid.trigger3 trigger
+
 
 gamerule announceAdvancements false
 gamerule doImmediateRespawn true
