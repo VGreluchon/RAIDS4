@@ -55,3 +55,5 @@ team add raid.team.11
 team add raid.team.12
 team add raid.team.13
 team add raid.team.14
+
+#define storage raid_uhc:main

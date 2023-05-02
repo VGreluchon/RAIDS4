@@ -4,11 +4,14 @@ execute as @s[scores={raid.bannerlords=2}] run function raid_uhc:teams/banner_lo
 execute as @s[scores={raid.bannerlords=3}] run function raid_uhc:teams/banner_lords/duelist/1
 
 execute as @s[scores={raid.highelves=1}] run function raid_uhc:teams/high_elves/royal_huntsman/1
+execute as @s[scores={raid.highelves=4}] run function raid_uhc:teams/high_elves/royal_huntsman/1
 execute as @s[scores={raid.highelves=2}] run function raid_uhc:teams/high_elves/jinglehunter/1
 execute as @s[scores={raid.highelves=3}] run function raid_uhc:teams/high_elves/pyxniel/1
 
 execute as @s[scores={raid.sacredorder=1}] run function raid_uhc:teams/sacred_order/venus/1
 execute as @s[scores={raid.sacredorder=2}] run function raid_uhc:teams/sacred_order/cupidus/1
+execute as @s[scores={raid.sacredorder=4}] run function raid_uhc:teams/sacred_order/cupidus/1
+execute as @s[scores={raid.sacredorder=4}] run function raid_uhc:teams/sacred_order/venus/1
 execute as @s[scores={raid.sacredorder=3}] run function raid_uhc:teams/sacred_order/sir_nicholas/1
 
 execute as @s[scores={raid.barbarians=1}] run function raid_uhc:teams/barbarians/scyl/1
