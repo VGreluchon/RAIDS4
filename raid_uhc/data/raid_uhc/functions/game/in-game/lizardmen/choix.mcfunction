@@ -15,18 +15,3 @@ execute as @a[scores={raid.lizardmen=5,raid.trigger1=2}] run function raid_uhc:g
 execute as @a[scores={raid.lizardmen=5,raid.trigger2=2}] run function raid_uhc:game/in-game/lizardmen/passif
 execute as @a[scores={raid.lizardmen=5,raid.trigger3=2}] run function raid_uhc:game/in-game/lizardmen/passif
 
-tellraw @a[scores={raid.lizardmen=1,raid.trigger1=2}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité passive ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-tellraw @a[scores={raid.lizardmen=2,raid.trigger2=2}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité passive ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-tellraw @a[scores={raid.lizardmen=3,raid.trigger3=2}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité passive ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-tellraw @a[scores={raid.lizardmen=1,raid.trigger1=1}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité active ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-tellraw @a[scores={raid.lizardmen=2,raid.trigger2=1}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité active ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-tellraw @a[scores={raid.lizardmen=3,raid.trigger3=1}] ["",{"text":"\u26a0","color":"dark_red"},{"text":" Tu as déjà choisit une capacité active ","color":"red"},{"text":"\u26a0","color":"dark_red"}]
-
-
-scoreboard players set @a[scores={raid.lizardmen=1,raid.trigger1=1}] raid.trigger1 0
-scoreboard players set @a[scores={raid.lizardmen=2,raid.trigger2=1}] raid.trigger2 0
-scoreboard players set @a[scores={raid.lizardmen=3,raid.trigger3=1}] raid.trigger3 0
-
-scoreboard players set @a[scores={raid.lizardmen=1,raid.trigger1=2}] raid.trigger1 0
-scoreboard players set @a[scores={raid.lizardmen=2,raid.trigger2=2}] raid.trigger2 0
-scoreboard players set @a[scores={raid.lizardmen=3,raid.trigger3=2}] raid.trigger3 0
