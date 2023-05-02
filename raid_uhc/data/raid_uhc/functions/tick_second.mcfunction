@@ -7,4 +7,3 @@
 #Others
 	execute if score #started raid.data matches 1.. run execute as @a[sort=random] at @s run function raid_uhc:game/players_seconds
 	execute if score #started raid.data matches 1.. run execute as @a[sort=random] at @s run function raid_uhc:game/players_seconds
-	execute as @a[scores={raid.role=1..}] run function raid_uhc:game/in-game/roles2
