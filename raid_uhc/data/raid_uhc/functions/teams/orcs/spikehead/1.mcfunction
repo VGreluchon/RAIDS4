@@ -6,5 +6,5 @@ execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run fun
 execute unless score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run scoreboard players set @s raid.spell 0
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"CLING CLING CLING:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"CLING CLING CLING: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
 execute if score @s raid.cooldown matches 300.. run title @s actionbar ["",{"text":"CLING CLING CLING: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

@@ -6,5 +6,5 @@ execute if score @s raid.life matches ..15 if score @s raid.cooldown matches 600
 #Il possède un glaive, tous les 3 coups donnés avec celui ci, son prochain coups inflige un effet de poison pendant 3 secondes
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..599 run title @s actionbar ["",{"text":"Life Balancing:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/600","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches ..599 run title @s actionbar ["",{"text":"Life Balancing: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/600","color":"#0F6FD8"}]
 execute if score @s raid.cooldown matches 600.. run title @s actionbar ["",{"text":"Life Balancing: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

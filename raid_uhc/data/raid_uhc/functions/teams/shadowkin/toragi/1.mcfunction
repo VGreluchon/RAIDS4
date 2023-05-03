@@ -9,5 +9,5 @@ function raid_uhc:teams/shadowkin/passif
 #Quand il a moins de 5♥, les deux formes sont activés
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..14 run title @s actionbar ["",{"text":"Frog shifter:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/15","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches ..14 run title @s actionbar ["",{"text":"Frog shifter: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/15","color":"#0F6FD8"}]
 execute if score @s raid.cooldown matches 15.. run title @s actionbar ["",{"text":"Frog shifter: ","color":"#0F6FD8"},{"text":"Métamorphose prête","color":"gold"}]

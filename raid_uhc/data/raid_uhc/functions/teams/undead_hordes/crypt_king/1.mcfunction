@@ -6,5 +6,5 @@ function raid_uhc:teams/undead_hordes/passif
 #Zombie: Il donne l’effet Hunger aux ennemis proches
 #Creeper: Ses flèches ont 5% de chance de faire une explosion
 
-title @s actionbar ["",{"text":"Hang glider:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"},{"text":"%","color":"#0F6FD8"}]
+title @s actionbar ["",{"text":"Hang glider: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"},{"text":"%","color":"#0F6FD8"}]
 

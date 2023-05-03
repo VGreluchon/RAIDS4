@@ -1,4 +1,10 @@
+
 give @a[scores={raid.bannerlords=2}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
 give @a[scores={raid.barbarians=3}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
 give @a[scores={raid.shadowkin=3}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
 give @a[scores={raid.highelves=1}] compass{Tags:["tracker"],display:{Name:'[{"text":"Game Tracking","italic":false}]',Lore:['[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{}]} 1
+
+execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredorder matches 1.. unless score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 30
+execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 26
+execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.max_health base set 32
+execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 1

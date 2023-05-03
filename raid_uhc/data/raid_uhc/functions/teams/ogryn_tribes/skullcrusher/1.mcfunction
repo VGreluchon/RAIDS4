@@ -4,5 +4,5 @@ function raid_uhc:teams/ogryn_tribes/passif
 #En tuant un joueur, il obtient sa tête avec laquelle il pourra faire une golden Head qui lui rendra 6♥ une fois mangée.
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Armor weakening:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Armor weakening: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
 execute if score @s raid.cooldown matches 300.. run title @s actionbar ["",{"text":"Armor weakening: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

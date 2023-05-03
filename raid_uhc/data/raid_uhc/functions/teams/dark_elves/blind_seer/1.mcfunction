@@ -6,5 +6,5 @@ execute unless score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run
 #La première fois qu’elle meurt, elle ressuscite avec 10♥ maximum jusqu’à la fin de la partie
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Epinephrine shot:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Epinephrine shot: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
 execute if score @s raid.cooldown matches 300.. run title @s actionbar ["",{"text":"Epinephrine shot: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

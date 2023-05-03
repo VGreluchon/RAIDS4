@@ -12,4 +12,4 @@ function raid_uhc:teams/sacred_order/passif
 execute if score @s raid.cooldown matches 60.. run function raid_uhc:teams/sacred_order/sir_nicholas/2
 
 #Txt cadeaux:
-title @s actionbar ["",{"text":"Gift number:","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"},{"text":" cadeaux","color":"#0F6FD8"}]
+title @s actionbar ["",{"text":"Gift number: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"},{"text":" cadeaux","color":"#0F6FD8"}]
