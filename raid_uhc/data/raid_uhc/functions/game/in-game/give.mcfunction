@@ -8,3 +8,7 @@ execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredo
 execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 26
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.max_health base set 32
 execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 1
+
+execute as @a[scores={raid.ogryntribes=1}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"1",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
+execute as @a[scores={raid.ogryntribes=2}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"2",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
+execute as @a[scores={raid.ogryntribes=3}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"3",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}

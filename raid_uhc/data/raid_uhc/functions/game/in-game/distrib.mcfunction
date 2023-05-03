@@ -13,6 +13,7 @@ scoreboard players set @a raid.darkelves 0
 scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.knightsrevenant 0
+scoreboard players set @a raid.stat 1
 
 scoreboard players set @a raid.start 1
 
