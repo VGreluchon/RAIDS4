@@ -12,3 +12,7 @@ execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generi
 execute as @a[scores={raid.ogryntribes=1}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"1",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 execute as @a[scores={raid.ogryntribes=2}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"2",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 execute as @a[scores={raid.ogryntribes=3}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"3",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
+
+execute as @a[scores={raid.knightsrevenant=3}] run summon minecraft:armor_stand ~ 120 ~ {CustomName:"4",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
+
+
