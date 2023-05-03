@@ -1,5 +1,5 @@
 function raid_uhc:teams/knight_revenant/passif
-#Sa vie est bloquée à 0.5♥, il ne peut pas prendre de dégâts temps qu’au moins un de ses coéquipiers est en vie. Cependant il a les effets Lenteur I et Faiblesse 2 en permanence. Lorsque ses deux coéquipiers meurent il perd ses effets négatifs et sa vie est augmenté à 5♥ permanent avec un effet de Résistance 2
+#Sa vie est bloquée à 0.5♥, il ne peut pas prendre de dégâts temps qu’au moins un de ses coéquipiers est en vie. Cependant il a les effets Lenteur I et mining fatigue 1 en permanence. Lorsque ses deux coéquipiers meurent il perd ses effets négatifs et sa vie est augmenté à 5♥ permanent avec un effet de Résistance 2
 execute if score @s raid.stat matches ..1 if score @s raid.cooldown matches 11.. run function raid_uhc:teams/knight_revenant/miscreated_monster/2
 execute if score @s raid.stat matches 2 run function raid_uhc:teams/knight_revenant/miscreated_monster/3
 effect give @s[scores={raid.stat=2..,raid.cooldown=11..}] resistance 3 1 true
