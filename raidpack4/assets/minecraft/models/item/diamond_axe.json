@@ -1,0 +1,10 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_axe"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 4220116 }, "model": "crazy_adventure:equipments/uranium_axe" },
+		{ "predicate": { "custom_model_data": 4220125 }, "model": "crazy_adventure:equipments/californium_axe" }
+	]
+}
