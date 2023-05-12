@@ -1,7 +1,7 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "item/diamond_sword"
+		"layer0": "item/golden_sword"
 	},
 	"overrides": [
 		{ "predicate": { "custom_model_data": 4229002 }, "model": "crazy_adventure:equipments/obsidian_sword" },
