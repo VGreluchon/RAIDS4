@@ -35,7 +35,9 @@ scoreboard objectives add raid.bow minecraft.used:minecraft.bow
 scoreboard objectives add raid.trigger1 trigger
 scoreboard objectives add raid.trigger2 trigger
 scoreboard objectives add raid.trigger3 trigger
-
+scoreboard objectives add raid.damage custom:damage_dealt
+scoreboard objectives add raid.jump custom:jump
+scoreboard objectives add raid.gold mined:gold_ore
 
 gamerule announceAdvancements false
 gamerule doImmediateRespawn true
@@ -58,6 +60,21 @@ team add raid.team.11
 team add raid.team.12
 team add raid.team.13
 team add raid.team.14
+team modify raid.team.1 nametagVisibility hideForOtherTeams
+team modify raid.team.2 nametagVisibility hideForOtherTeams
+team modify raid.team.3 nametagVisibility hideForOtherTeams
+team modify raid.team.4 nametagVisibility hideForOtherTeams
+team modify raid.team.5 nametagVisibility hideForOtherTeams
+team modify raid.team.6 nametagVisibility hideForOtherTeams
+team modify raid.team.7 nametagVisibility hideForOtherTeams
+team modify raid.team.8 nametagVisibility hideForOtherTeams
+team modify raid.team.9 nametagVisibility hideForOtherTeams
+team modify raid.team.10 nametagVisibility hideForOtherTeams
+team modify raid.team.11 nametagVisibility hideForOtherTeams
+team modify raid.team.12 nametagVisibility hideForOtherTeams
+team modify raid.team.13 nametagVisibility hideForOtherTeams
+team modify raid.team.14 nametagVisibility hideForOtherTeams
+
 
 #define storage raid_uhc:main
 

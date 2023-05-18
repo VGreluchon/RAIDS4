@@ -13,7 +13,8 @@ scoreboard players set @a raid.darkelves 0
 scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.knightsrevenant 0
-scoreboard players set @a raid.stat 1
+scoreboard players set @a raid.stat 0
+scoreboard players set @a raid.cooldown 11
 
 scoreboard players set @a raid.start 1
 
@@ -496,5 +497,7 @@ execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.14] run scor
 execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
 
 scoreboard players set @a[scores={raid.knightsrevenant=1..}] raid.start 0
+
+scoreboard players set @a[scores={raid.shadowkin=1}] raid.data 1
 
 function raid_uhc:game/in-game/roles

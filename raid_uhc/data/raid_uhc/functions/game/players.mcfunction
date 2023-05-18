@@ -61,4 +61,4 @@ execute as @s[scores={raid.knightsrevenant=1}] run function raid_uhc:teams/knigh
 execute as @s[scores={raid.knightsrevenant=2}] run function raid_uhc:teams/knight_revenant/deathless/1
 execute as @s[scores={raid.knightsrevenant=3}] run function raid_uhc:teams/knight_revenant/crypt_witch/1
 
-
+scoreboard players set @s raid.kill 0

@@ -7,6 +7,7 @@ execute as @e[type=armor_stand,name="Arena"] run fill ~10 ~-3 ~10 ~10 ~5 ~10 bar
 execute as @e[type=armor_stand,name="Arena"] run fill ~-10 ~-3 ~10 ~-10 ~5 ~10 barrier
 execute as @e[type=armor_stand,name="Arena"] run fill ~10 ~-3 ~-10 ~10 ~5 ~-10 barrier
 execute as @e[type=armor_stand,name="Arena"] run fill ~-10 ~-3 ~-10 ~-10 ~5 ~-10 barrier
-execute as @s run tp @e[type=armor_stand,name="Arena"]
-execute at @e[type=armor_stand,name="Opponent"] as @p[scores={raid.bannerlords=0}] run scoreboard players set @s raid.bannerlords 10
+
+execute as @p[scores={raid.bannerlords=0},distance=..15] run scoreboard players set @s raid.bannerlords 10
 execute at @e[type=armor_stand,name="Opponent"] as @p[scores={raid.bannerlords=10}] run tp @e[type=armor_stand,name="Arena"]
+execute as @s run tp @e[type=armor_stand,name="Arena"]
