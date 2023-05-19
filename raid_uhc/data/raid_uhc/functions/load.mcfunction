@@ -27,10 +27,10 @@ scoreboard objectives add raid.kills playerKillCount
 scoreboard objectives add raid.spell minecraft.used:minecraft.warped_fungus_on_a_stick
 scoreboard objectives add raid.shield custom:damage_blocked_by_shield
 scoreboard objectives add raid.life health
-scoreboard objectives add raid.bow minecraft.used:minecraft.bow
+scoreboard objectives add raid.bow minecraft.used:bow
 scoreboard objectives add raid.stat dummy
 scoreboard objectives add raid.data dummy
-scoreboard objectives add raid.sprint custom:sneak_time
+scoreboard objectives add raid.sprint custom:sprint_one_cm
 scoreboard objectives add raid.bow minecraft.used:minecraft.bow
 scoreboard objectives add raid.trigger1 trigger
 scoreboard objectives add raid.trigger2 trigger
