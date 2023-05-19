@@ -1,7 +1,7 @@
 function raid_uhc:teams/high_elves/passif
 #Samaritan rescue: Lorsqu’un de ses allié dans un rayon de 10 blocs a moins de 3♥, et qu’elle a plus de 4 pommes en or dans son inventaire, elle perd 4 pommes et son allié régénère rapidement 9 ♥ (20 minutes de délai de récupération
-data modify storage raid_uhc:main Inventory set from entity @s Inventory
-execute if entity @a[scores={raid.highelves=1..3},distance=1..10] if data entity @s Inventory[{"id":"minecraft:golden_apple",Count:4b}]
+execute as @s store result score @s raid.stat run clear @s golden_apple 0
+execute if entity @s[scores={raid.stat=4..,raid.cooldown=1200..}] if entity @p[distance=1..10,scores={high_elves=1..3,raid.life=..6}] run function raid_uhc:teams/high_elves/pyxniel/3
 
 #Frozen opponents: Elle peut utiliser son orbe de pouvoir pour immobiliser pendant 5 secondes les adversaires dans un rayon de 15 blocs (5 minutes de délai de récupération)
 execute if score @s[scores={raid.spell=1..}] raid.cooldown2 matches 300.. run function raid_uhc:teams/high_elves/pyxniel/2
