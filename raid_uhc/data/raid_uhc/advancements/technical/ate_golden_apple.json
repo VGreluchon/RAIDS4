@@ -1,0 +1,18 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:consume_item",
+		"conditions": {
+		  "item": {
+			"items": [
+			  "minecraft:golden_apple"
+			]
+		  }
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "raid_uhc:advancements/ate_golden_apple"
+	}
+  }
+  

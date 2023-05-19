@@ -3,7 +3,7 @@ function raid_uhc:teams/dark_elves/passif
 execute if entity @a[scores={raid.demonspawn=3},distance=..11] run effect give @s resistance 2 0 true
 
 #Blood twins: Lorsqu’il a moins de 4♥, il se téléporte à Inithwe et obtient 6♥ d’absorption pendant 10 secondes (15 minutes de délai de récupération)
-
+execute if entity @s[scores={raid.life=..8,raid.cooldown=900..}] run function raid_uhc:teams/demonspawn/drexthar/2
 
 #Txt capacité prête ou non:
 execute if score @s raid.cooldown matches ..899 if score @s raid.cooldown2 matches ..1799 run title @s actionbar ["",{"text":"Blood twins: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/900","color":"#0F6FD8"},{"text":" |Eyes collector: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown2"},"color":"gold"},{"text":"/1800","color":"#0F6FD8"}]

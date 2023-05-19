@@ -1,0 +1,16 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:consume_item",
+		"conditions": {
+		  "item": {
+			"nbt": "{ctc:{id:\"golden_head\"}}"
+		  }
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "raid_uhc:advancements/ate_golden_head"
+	}
+  }
+  
