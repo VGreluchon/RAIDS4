@@ -50,8 +50,9 @@ execute as @s[scores={raid.darkelves=2}] run function raid_uhc:teams/dark_elves/
 execute as @s[scores={raid.darkelves=3}] run function raid_uhc:teams/dark_elves/mystic_hand/1
 
 execute as @s[scores={raid.undeadhordes=1}] run function raid_uhc:teams/undead_hordes/crypt_king/1
-execute as @s[scores={raid.undeadhordes=1}] run function raid_uhc:teams/undead_hordes/rotos/1
-execute as @s[scores={raid.undeadhordes=1}] run function raid_uhc:teams/undead_hordes/bad_el_kazar/1
+execute as @s[scores={raid.undeadhordes=2}] run function raid_uhc:teams/undead_hordes/rotos/1
+execute as @s[scores={raid.undeadhordes=4}] run function raid_uhc:teams/undead_hordes/rotos/1
+execute as @s[scores={raid.undeadhordes=3}] run function raid_uhc:teams/undead_hordes/bad_el_kazar/1
 
 execute as @s[scores={raid.orcs=1}] run function raid_uhc:teams/orcs/galek/1
 execute as @s[scores={raid.orcs=2}] run function raid_uhc:teams/orcs/zargala/1
