@@ -5,7 +5,7 @@ give @a[scores={raid.shadowkin=3}] golden_sword{Unbreakable:1,Damage:9,RepairCos
 give @a[scores={raid.highelves=1}] compass{Tags:["tracker"],display:{Name:'[{"text":"Game Tracking","italic":false}]',Lore:['[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{}]} 1
 give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
 
-give @a[scores={raid.barbarians=1}] elytra{Unbreakable:1,Enchantments:[{id:"protection",lvl:6}]} 1
+give @a[scores={raid.barbarians=1}] elytra{Unbreakable:1,Enchantments:[{id:"protection",lvl:5}]} 1
 give @a[scores={raid.barbarians=1}] firework_rocket 64
 
 execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredorder matches 1.. unless score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 30
