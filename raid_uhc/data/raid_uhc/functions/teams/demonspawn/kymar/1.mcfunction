@@ -3,7 +3,7 @@ function raid_uhc:teams/dark_elves/passif
 
 #Lorsque Inithwe et Drexthar sont trop éloignés l’un de l’autre pour obtenir leur bonus, c’est Prince Kymar qui obtient les 20% de dégâts supplémentaire et l’effet Résistance 1
 execute as @a[scores={raid.demonspawn=2}] if entity @a[scores={raid.demonspawn=3},distance=12..] run effect give @s resistance 2 0 true
-execute as @a[scores={raid.demonspawn=2}] if entity @a[scores={raid.demonspawn=3},distance=12..] run attribute @s minecraft:generic.attack_damage modifier add 1-1-1-1-1 "uwu" 1.20 multiply_base
+execute as @a[scores={raid.demonspawn=2}] if entity @a[scores={raid.demonspawn=3},distance=12..] run attribute @s minecraft:generic.attack_damage modifier add 1-1-1-1-1 "uwu20" 0.20 multiply_base
 execute as @a[scores={raid.demonspawn=2}] if entity @a[scores={raid.demonspawn=3},distance=..11] run attribute @s minecraft:generic.attack_damage modifier remove 1-1-1-1-1
 
 #Txt capacité prête ou non:
