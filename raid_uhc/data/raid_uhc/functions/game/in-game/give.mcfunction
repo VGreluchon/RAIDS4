@@ -12,7 +12,7 @@ give @a[scores={raid.orcs=3}] iron_helmet{Unbreakable:1,display:{Name:'[{"text":
 execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredorder matches 1.. unless score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 30
 execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 26
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.max_health base set 32
-execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.attack_damage base set 1.10
+execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.attack_damage modifier add 2-2-0-1-0 "10SO" 0.10 multiply_base
 execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 1
 
 execute as @a[scores={raid.ogryntribes=1}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"1",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
