@@ -47,6 +47,7 @@ execute as @s[scores={raid.dwarves=3}] run function raid_uhc:teams/dwarves/runic
 
 execute as @s[scores={raid.darkelves=1}] run function raid_uhc:teams/dark_elves/judge/1
 execute as @s[scores={raid.darkelves=2}] run function raid_uhc:teams/dark_elves/blind_seer/1
+execute as @s[scores={raid.darkelves=4}] run function raid_uhc:teams/dark_elves/blind_seer/1
 execute as @s[scores={raid.darkelves=3}] run function raid_uhc:teams/dark_elves/mystic_hand/1
 
 execute as @s[scores={raid.undeadhordes=1}] run function raid_uhc:teams/undead_hordes/crypt_king/1

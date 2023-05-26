@@ -2,6 +2,7 @@
 loot give @a[scores={raid.bannerlords=2}] loot raid_uhc:i/glaive
 loot give @a[scores={raid.barbarians=3}] loot raid_uhc:i/glaive
 loot give @a[scores={raid.shadowkin=3}] loot raid_uhc:i/glaive
+loot give @a loot raid_uhc:i/power_orb
 
 give @a[scores={raid.highelves=1}] compass{Tags:["tracker"],display:{Name:'[{"text":"Game Tracking","italic":false}]',Lore:['[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{}]} 1
 give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
