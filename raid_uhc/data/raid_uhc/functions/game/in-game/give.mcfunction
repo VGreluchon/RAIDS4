@@ -1,7 +1,8 @@
 
-give @a[scores={raid.bannerlords=2}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
-give @a[scores={raid.barbarians=3}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
-give @a[scores={raid.shadowkin=3}] golden_sword{Unbreakable:1,Damage:9,RepairCost:30,Tags:["glaive"],display:{Name:'[{"text":"Glaive","italic":false}]',Lore:['[{"text":"9 Attack Damage","italic":false,"color":"blue"},{"text":"","italic":false,"color":"dark_purple"}]','[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{id:"unbreaking",lvl:3}],HideFlags:4} 1
+loot give @a[scores={raid.bannerlords=2}] loot raid_uhc:i/glaive
+loot give @a[scores={raid.barbarians=3}] loot raid_uhc:i/glaive
+loot give @a[scores={raid.shadowkin=3}] loot raid_uhc:i/glaive
+
 give @a[scores={raid.highelves=1}] compass{Tags:["tracker"],display:{Name:'[{"text":"Game Tracking","italic":false}]',Lore:['[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{}]} 1
 give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
 
