@@ -15,5 +15,7 @@ scoreboard players reset @a[scores={raid.lizardmen=1..}] raid.trigger1
 scoreboard players reset @a[scores={raid.lizardmen=1..}] raid.trigger2
 scoreboard players reset @a[scores={raid.lizardmen=1..}] raid.trigger3
 
+execute if score #started raid.data matches 1.. run execute as @a[sort=random] at @s run function raid_uhc:game/in-game/checkinv
 
 execute if score #started raid.data matches 1.. run execute as @a[scores={raid.death=1}] run function raid_uhc:game/in-game/death
+
