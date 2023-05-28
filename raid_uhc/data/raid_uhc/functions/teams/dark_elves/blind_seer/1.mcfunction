@@ -3,7 +3,7 @@ function raid_uhc:teams/dark_elves/passif
 execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run function raid_uhc:teams/dark_elves/blind_seer/2
 execute unless score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run scoreboard players set @s raid.spell 0
 
-#La première fois qu’elle meurt, elle ressuscite avec 10♥ maximum jusqu’à la fin de la partie
+#La première fois qu’elle meurt, elle ressuscite avec 10♥ maximum jusqu’à la fin de la partie, OUI
 
 #Txt capacité prête ou non:
 execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Epinephrine shot: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
