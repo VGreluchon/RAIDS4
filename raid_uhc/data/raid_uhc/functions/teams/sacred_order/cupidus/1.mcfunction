@@ -1,6 +1,6 @@
 function raid_uhc:teams/sacred_order/passif
-#A chaque fois qu’une équipe est éliminée de la partie, il fait gagner aux membres de son équipe 0.5♥ permanent
-
+#A chaque fois qu’une équipe est éliminée de la partie, il fait gagner aux membres de son équipe 0.5♥ permanent ->death2
+execute if entity @s[scores={raid.stat=1..14}] run function raid_uhc:teams/sacred_order/cupidus/3
 
 #A la mort de Vénus, il obtient ses pouvoirs ainsi qu’un effet de régénération permanent
 execute if score @p[scores={raid.sacredorder=1}] raid.death matches 1.. run scoreboard players set @s raid.sacredorder 4

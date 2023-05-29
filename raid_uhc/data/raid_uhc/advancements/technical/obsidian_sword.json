@@ -1,0 +1,16 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:item_durability_changed",
+		"conditions": {
+		  "item": {
+			"nbt": "{raid:{obsidian_sword:1b}}"
+		  }
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "raid_uhc:advancements/obsidian_sword"
+	}
+  }
+  

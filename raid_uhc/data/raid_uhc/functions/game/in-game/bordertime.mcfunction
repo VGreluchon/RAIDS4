@@ -3,7 +3,7 @@ scoreboard players remove #border_timer raid.data 1
 
 execute if score #border_timer raid.data matches -1800 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"Terminée","color":"red"}]
 execute if score #border_timer raid.data matches 0 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"Activée","color":"green"}]
-execute if score #border_timer raid.data matches 60 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":">1 min","color":"green"}]
+execute if score #border_timer raid.data matches 60 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"<1 min","color":"green"}]
 execute if score #border_timer raid.data matches 120 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"0 h 02 min ","color":"green"}]
 execute if score #border_timer raid.data matches 180 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"0 h 03 min ","color":"green"}]
 execute if score #border_timer raid.data matches 240 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"0 h 04 min ","color":"green"}]
