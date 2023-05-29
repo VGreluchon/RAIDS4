@@ -14,6 +14,7 @@ scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.knightsrevenant 0
 scoreboard players set @a raid.stat 0
+scoreboard players set @a raid.death 0
 scoreboard players set @a raid.cooldown 11
 
 scoreboard players set @a raid.start 1
@@ -590,5 +591,6 @@ execute if score #nteam raid.data matches 12 run team modify raid.sidebar.4 suff
 execute if score #nteam raid.data matches 13 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
 execute if score #nteam raid.data matches 14 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"14","color":"white"}]
 
+execute as @a run function raid_uhc:game/setmarker
 
 function raid_uhc:game/in-game/roles
