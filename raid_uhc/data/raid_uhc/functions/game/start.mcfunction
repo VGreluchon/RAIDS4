@@ -2,7 +2,6 @@
 scoreboard players set #state raid.data 1
 
 ##Téléportation et clear des joueurs
-#execute as @a run function raid_uhc:player/join
 #spreadplayers 0 0 250 1250 true @a
 
 ##Timer et Scoreboard

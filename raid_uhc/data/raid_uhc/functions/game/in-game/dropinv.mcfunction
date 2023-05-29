@@ -1,4 +1,4 @@
-loot spawn ~ ~ ~ loot raid_uhc:temp_item
+loot spawn ~ ~ ~ loot raid_uhc:i/temp_item
 data modify entity @e[type=item,nbt={Item:{tag:{switch.temp_item:1b}}},limit=1] Item set from entity @s data.Inventory[0]
 data remove entity @s data.Inventory[0]
 

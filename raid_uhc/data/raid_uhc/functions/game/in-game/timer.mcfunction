@@ -17,10 +17,7 @@
 #
 #f.close()
 
-
-scoreboard players operation #temps raid.data = #game_second raid.data
 scoreboard players remove #temps raid.data 1
-scoreboard players operation #temps raid.data %= #1200 raid.data
 scoreboard players add #day raid.data 1
 execute if score #day raid.data matches 300 run time set night
 execute if score #day raid.data matches 600 run time set day
@@ -1244,4 +1241,4 @@ execute if score #episode raid.data matches 10 run team modify raid.sidebar.2 su
 execute if score #episode raid.data matches 11 run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"12","color":"white"}]
 execute if score #episode raid.data matches 12 run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
 execute if score #episode raid.data matches 13 run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"14","color":"white"}]
-execute if score #episode raid.data matches 14 run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"15","color":"white"}]
+execute if score #episode raid.data matches 14.. run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"15","color":"white"}]
