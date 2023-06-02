@@ -7,8 +7,8 @@ execute if score @s raid.stat matches 1 run function raid_uhc:teams/shadowkin/to
 execute if score @s raid.data matches 2 run function raid_uhc:teams/shadowkin/toragi/5
 execute if score @s raid.stat matches 1 run function raid_uhc:teams/shadowkin/toragi/5
 #Il doit attendre 15 secondes entre chaque changement de forme.
-execute if score @s[scores={raid.data=1,raid.spell=1}] raid.cooldown matches 15.. run function raid_uhc:teams/shadowkin/toragi/2
-execute if score @s[scores={raid.data=2,raid.spell=1}] raid.cooldown matches 15.. run function raid_uhc:teams/shadowkin/toragi/3
+execute if score @s[scores={raid.data=1,raid.spell=1..}] raid.cooldown matches 15.. run function raid_uhc:teams/shadowkin/toragi/2
+execute if score @s[scores={raid.data=2,raid.spell=1..}] raid.cooldown matches 15.. run function raid_uhc:teams/shadowkin/toragi/3
 
 execute if score @s[scores={spell=1}] raid.cooldown matches ..14 run scoreboard players set @s raid.spell 0
 #Quand il a moins de 5♥, les deux formes sont activés
