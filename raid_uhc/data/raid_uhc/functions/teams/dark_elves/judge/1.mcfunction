@@ -3,7 +3,7 @@ function raid_uhc:teams/dark_elves/passif
 execute if entity @a[scores={raid.darkelves=2,raid.death=1}] run function raid_uhc:teams/dark_elves/judge/2
 execute if entity @a[scores={raid.darkelves=3,raid.death=1}] run function raid_uhc:teams/dark_elves/judge/2
 execute if entity @a[scores={raid.darkelves=4,raid.death=1}] run function raid_uhc:teams/dark_elves/judge/2
-execute if entity @s[scores={raid.kill=0}] run function raid_uhc:teams/dark_elves/judge/2
+execute if entity @s[scores={raid.kill=1}] run function raid_uhc:teams/dark_elves/judge/2
 
 # En utilisant son orbe de pouvoir, il empêche les ennemis dans un rayon de 10 blocs d’utiliser leurs capacités actives / demandant un cooldown pendant une durée de 10 secondes (20 minutes de temps de récupération)
 execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 1200.. run function raid_uhc:teams/dark_elves/judge/4
