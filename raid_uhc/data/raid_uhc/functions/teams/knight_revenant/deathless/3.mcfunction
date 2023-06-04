@@ -29,5 +29,6 @@ execute if score @s raid.life matches 28 run damage @s 14 explosion
 execute if score @s raid.life matches 29 run damage @s 15 explosion 
 execute if score @s raid.life matches 30 run damage @s 15 explosion 
 
+execute as @a[scores={raid.knightsrevenant=2}] run damage @s 10 explosion
 execute as @a[scores={raid.knightsrevenant=2}] run scoreboard players set @s raid.spell 0
 execute as @a[scores={raid.knightsrevenant=2}] run scoreboard players set @s raid.cooldown2 0
