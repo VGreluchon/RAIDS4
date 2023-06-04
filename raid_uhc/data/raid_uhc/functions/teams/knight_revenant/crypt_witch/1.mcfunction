@@ -16,7 +16,6 @@ execute if entity @s[tag=raid.creeper] as @e[type=marker,predicate=!raid_uhc:rid
 #Araignée: Toutes les 3 minutes elle obtient un oeuf qui, une fois lancée, fait apparaître une toile d'araignée sur le point d’impact.
 execute if score @s[tag=raid.spider] raid.cooldown matches 180.. run give @s egg 1
 execute if score @s[tag=raid.spider] raid.cooldown matches 180.. run scoreboard players set @s raid.cooldown 0
-execute if entity @s[tag=raid.spider] as @e[type=egg,tag=cobweb,nbt={inGround:1b}] run function raid_uhc:teams/knight_revenant/crypt_witch/6
 execute if entity @s[tag=raid.spider] as @e[type=marker,predicate=!raid_uhc:ride,tag=raid.egg,tag=raid.cobweb] run function raid_uhc:teams/knight_revenant/crypt_witch/6
 #Squelette: Obtient un arc spécial qu’elle ne peut pas enchanter mais dont les flèches sont téléguidées.
 
