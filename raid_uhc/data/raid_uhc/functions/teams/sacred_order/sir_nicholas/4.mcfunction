@@ -10,4 +10,5 @@ execute if score #success raid.data matches 1 run particle block warped_fungus ~
 execute if score #success raid.data matches 1 run playsound entity.item.break player @s
 execute if score #success raid.data matches 1 run item replace entity @s weapon with air
 execute if score #success raid.data matches 1 run tag @s remove raid.shield_stick
+execute if score #success raid.data matches 1 run tag @s remove raid.end_sir_nicholas
 execute if score #success raid.data matches 1 run tellraw @s {"text":"Ton Shield Stick s'est cassé ! Tu peux en acheter un nouveau dans le Santa Shop !","color":"light_purple"}

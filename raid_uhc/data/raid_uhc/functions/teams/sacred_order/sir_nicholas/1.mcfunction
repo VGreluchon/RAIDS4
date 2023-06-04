@@ -7,7 +7,7 @@ execute if entity @s[tag=!raid.end_sir_nicholas] if data entity @s SelectedItem.
 execute if entity @s[scores={raid.trigger3=1..}] run function raid_uhc:teams/sacred_order/sir_nicholas/trigger3
 execute if entity @s[tag=raid.shield_stick,scores={raid.cooldown2=120..,raid.spell=1..}] if data entity @s SelectedItem.tag.raid_uhc.shield_stick run function raid_uhc:teams/sacred_order/sir_nicholas/4
 execute if entity @s[tag=raid.shield_stick,scores={raid.cooldown2=..119,raid.spell=1..}] if data entity @s SelectedItem.tag.raid_uhc.shield_stick run scoreboard players set @s crazy_adventure.spell 0
-
+execute if entity @s[tag=!raid.end_sir_nicholas,tag=raid.shield_stick,tag=raid.elytra,tag=raid.obsidian_sword] run tag @s add raid.end_sir_nicholas
 #-Traineau Volant: Donne une paire d'élytres ainsi que des feux d'artifice; fait
 execute if entity @s[scores={raid.trigger2=1..}] run function raid_uhc:teams/sacred_order/sir_nicholas/trigger2
 
