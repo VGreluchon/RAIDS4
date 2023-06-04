@@ -11,10 +11,10 @@ execute if entity @s[scores={raid.trigger4=4..}] run function raid_uhc:teams/und
 execute if entity @s[tag=raid.firstchoicemade,tag=raid.spider,tag=raid.skeleton,tag=raid.zombie,tag=raid.creeper,tag=!raid.endcollection] run tag @s add raid.endcollection
 
 #Araignée: Ses coups d’épée infligent un effet de poison
-execute if entity @s[tag=raid.spider] as @a[distance=..5,scores={raid.knightsrevenant=0,raid.life=20..}] run effect give @s poison 2 1 true
+execute if entity @s[tag=raid.spider] as @a[distance=..5,scores={raid.undeadhordes=0,raid.life=20..}] run effect give @s poison 2 1 true
 #Squelette: Il obtient un livre Infinity FAIT
 #Zombie: Il donne l’effet Hunger aux ennemis proches
-execute if entity @s[tag=raid.zombie] as @a[distance=..5,scores={raid.knightsrevenant=0}] run effect give @s hunger 2 1 true
+execute if entity @s[tag=raid.zombie] as @a[distance=..5,scores={raid.undeadhordes=0}] run effect give @s hunger 2 1 true
 #Creeper: Ses flèches ont 5% de chance de faire une explosion
 execute if entity @s[tag=raid.creeper] as @e[type=arrow,tag=explo,nbt={inGround:1b}] run function raid_uhc:teams/undead_hordes/crypt_king/4
 execute if entity @s[tag=raid.creeper] as @e[type=marker,predicate=!raid_uhc:ride,tag=raid.arrow,tag=raid.explo] run function raid_uhc:teams/undead_hordes/crypt_king/4

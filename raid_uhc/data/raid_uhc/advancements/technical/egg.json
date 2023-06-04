@@ -8,7 +8,7 @@
 						"condition": "minecraft:entity_scores",
 						"entity": "this",
 						"scores": {
-							"raid.bow": {
+							"raid.egg": {
 								"min": 1
 							}
 						}
@@ -18,6 +18,6 @@
 		}
 	},
 	"rewards": {
-		"function": "raid_uhc:advancements/bow"
+		"function": "raid_uhc:advancements/egg"
 	}
 }
