@@ -5,5 +5,6 @@ execute if score @s raid.lizardmen matches 2 run loot give @s loot raid_uhc:i/go
 execute if score @s raid.undeadhordes matches 3 run loot give @s loot raid_uhc:i/golden_head
 execute if score @s raid.orcs matches 1..3 run loot give @s loot raid_uhc:i/golden_head
 execute if score @s raid.dwarves matches 1..3 run give @s golden_apple
+execute if score @s raid.sacredorder matches 3 run scoreboard players add @s raid.stat 50
 
 scoreboard players set @s raid.kill 0
