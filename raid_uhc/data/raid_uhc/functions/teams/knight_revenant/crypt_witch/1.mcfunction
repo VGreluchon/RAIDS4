@@ -2,10 +2,10 @@ function raid_uhc:teams/knight_revenant/passif
 #Souls collector: Elle choisit un pouvoir parmi les quatres ci-dessous, à chaque kill, elle peut en débloquer un autre.
 execute if entity @s[tag=!raid.firstchoicemade,tag=!raid.tempcollect,tag=!raid.spider,tag=!raid.skeleton,tag=!raid.zombie,tag=!raid.creeper] run function raid_uhc:teams/knight_revenant/crypt_witch/2
 execute if entity @s[scores={raid.kill=1},tag=!raid.endcollection] run function raid_uhc:teams/knight_revenant/crypt_witch/2
-execute if entity @s[scores={raid.trigger1=1..}] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger1
-execute if entity @s[scores={raid.trigger2=2..}] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger2
-execute if entity @s[scores={raid.trigger3=3..}] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger3
-execute if entity @s[scores={raid.trigger4=4..}] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger4
+execute if entity @s[scores={raid.trigger1=1..},tag=!raid.spider] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger1
+execute if entity @s[scores={raid.trigger2=2..},tag=!raid.creeper] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger2
+execute if entity @s[scores={raid.trigger3=3..},tag=!raid.zombie] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger3
+execute if entity @s[scores={raid.trigger4=4..},tag=!raid.skeleton] run function raid_uhc:teams/knight_revenant/crypt_witch/trigger4
 execute if entity @s[tag=raid.firstchoicemade,tag=raid.spider,tag=raid.skeleton,tag=raid.zombie,tag=raid.creeper,tag=!raid.endcollection] run tag @s add raid.endcollection
 
 #Zombie: Il donne l’effet Hunger aux ennemis proches
