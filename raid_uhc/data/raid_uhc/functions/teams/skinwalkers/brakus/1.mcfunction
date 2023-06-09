@@ -8,6 +8,7 @@ execute if score #day raid.data matches 300..600 run effect give @s[nbt={Invento
 execute if score #day raid.data matches 300..600 run effect give @s[nbt={Inventory:[{Slot:98b,id:"minecraft:diamond_sword"}]}] mining_fatigue 1 255 true
 execute if score #day raid.data matches 300..600 run effect give @s[nbt={Inventory:[{Slot:98b,id:"minecraft:netherite_sword"}]}] mining_fatigue 1 255 true
 execute if score #day raid.data matches 300..600 run effect give @s[nbt={Inventory:[{Slot:98b,id:"minecraft:golden_sword"}]}] mining_fatigue 1 255 true
+execute if score #day raid.data matches 300..600 if data entity @s SelectedItem.tag.raid_uhc.claw run effect give @s haste 2 0 true
 execute if score #day raid.data matches 0..300 if data entity @s SelectedItem.tag.raid_uhc.claw run effect give @s mining_fatigue 1 255 true
 execute if score #day raid.data matches 300..600 run effect give @s strength 2 0 true
 
