@@ -37,6 +37,7 @@ scoreboard objectives add raid.trigger2 trigger
 scoreboard objectives add raid.trigger3 trigger
 scoreboard objectives add raid.trigger4 trigger
 scoreboard objectives add raid.damage custom:damage_dealt
+scoreboard objectives add raid.damagetaken custom:damage_taken
 scoreboard objectives add raid.jump custom:jump
 scoreboard objectives add raid.gold mined:gold_ore
 
