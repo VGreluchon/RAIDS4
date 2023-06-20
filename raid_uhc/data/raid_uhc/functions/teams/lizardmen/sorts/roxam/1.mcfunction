@@ -1,7 +1,9 @@
 #Ultimate discretion: Quatre slots de son inventaire sont réservés à son pouvoir.
 
-#En utilisant son orbe de pouvoir, son armure est retirée, il devient invisible et obtient l’effet Vitesse II et Faiblesse II pendant 20 secondes (5 minutes de récupération)
+# En utilisant ton orbe de pouvoir, tu étourdis les ennemis, les immobilisant pendant 3 secondes et leur donnant l’effet nausée pendant 10 secondes 
+execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 180.. run function raid_uhc:teams/lizardmen/sorts/roxam/2
+execute if score @s[scores={raid.spell=1..}] raid.cooldown matches ..179 run scoreboard players set @s raid.spell 0
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..299 run title @s actionbar ["",{"text":"Ultimate discretion: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/300","color":"#0F6FD8"}]
-execute if score @s raid.cooldown matches 300.. run title @s actionbar ["",{"text":"Ultimate discretion: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]
+execute if score @s raid.cooldown matches ..179 run title @s actionbar ["",{"text":"Echo: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/180","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches 180.. run title @s actionbar ["",{"text":"Echo: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]
