@@ -1,11 +1,11 @@
 
 {
-	"parent": "minecraft:item/generated",
+	"parent": "item/handheld",
 	"textures": {
 	  "layer0": "minecraft:item/golden_apple"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 4229006 }, "model": "crazy_adventure:food/golden_head" }
+		{ "predicate": { "custom_model_data": 4229006 }, "model": "raid_uhc:food/golden_head" }
 
 	  ]
   }

@@ -4,7 +4,7 @@
         "layer0": "item/warped_fungus_on_a_stick"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 4229001 }, "model": "crazy_adventure:equipments/power_orb" },
-		{ "predicate": { "custom_model_data": 4229008 }, "model": "crazy_adventure:equipments/shield_stick" }
+		{ "predicate": { "custom_model_data": 4229001 }, "model": "raid_uhc:equipments/power_orb" },
+		{ "predicate": { "custom_model_data": 4229008 }, "model": "raid_uhc:equipments/shield_stick" }
 	]
 }

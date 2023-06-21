@@ -4,6 +4,6 @@
 		"layer0": "item/golden_helmet"
 	},
 	"overrides": [
-		{ "predicate": { "custom_model_data": 4229007 }, "model": "crazy_adventure:equipments/crown" }
+		{ "predicate": { "custom_model_data": 4229007 }, "model": "raid_uhc:equipments/crown" }
 	]
 }

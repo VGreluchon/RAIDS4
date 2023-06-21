@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:golden_axe",
+					"name": "minecraft:netherite_sword",
 					"functions": [
 						{
 							"function": "minecraft:copy_nbt",
@@ -16,7 +16,7 @@
 							},
 							"ops": [
 								{
-									"source": "all.galek_axe.tag",
+									"source": "all.obsidian_sword.tag",
 									"target": "{}",
 									"op": "merge"
 								}

@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/netherite_sword"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 4229002 }, "model": "raid_uhc:equipments/obsidian_sword" },
+		{ "predicate": { "custom_model_data": 4229003 }, "model": "raid_uhc:equipments/glaive" }
+
+	]
+}

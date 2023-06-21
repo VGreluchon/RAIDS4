@@ -6,17 +6,17 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:golden_apple",
+					"name": "minecraft:netherite_sword",
 					"functions": [
 						{
 							"function": "minecraft:copy_nbt",
 							"source": {
 								"type": "minecraft:storage",
-								"source": "crazy_adventure:main"
+								"source": "raid_uhc:main"
 							},
 							"ops": [
 								{
-									"source": "all.golden_head.tag",
+									"source": "all.glaive.tag",
 									"target": "{}",
 									"op": "merge"
 								}

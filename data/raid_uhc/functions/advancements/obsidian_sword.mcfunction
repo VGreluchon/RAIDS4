@@ -10,4 +10,4 @@ execute if score #obsidian_sword raid.data matches 161 run attribute @s generic.
 execute if score #obsidian_sword raid.data matches 161 run attribute @s generic.armor modifier remove d4023691-6205-4138-8701-82f317d41961
 execute if score #obsidian_sword raid.data matches 161 run attribute @s generic.armor modifier remove d4023691-6205-4138-8701-82f317d41962
 
-advancement revoke @s only raid_uhc:technical/glaive
+advancement revoke @s only raid_uhc:technical/obsidian_sword
