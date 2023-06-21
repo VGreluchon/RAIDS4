@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "crazy_adventure:item/food/golden_head"
+		"layer0": "raid_uhc:item/food/golden_head"
 	}
 }

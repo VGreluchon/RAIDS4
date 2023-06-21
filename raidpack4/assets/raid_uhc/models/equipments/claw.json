@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "crazy_adventure:item/equipments/claw"
+		"layer0": "raid_uhc:item/equipments/claw"
 	}
 }

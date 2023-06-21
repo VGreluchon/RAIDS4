@@ -4,7 +4,7 @@
 		"trigger": "minecraft:item_durability_changed",
 		"conditions": {
 		  "item": {
-			"nbt": "{raid:{glaive:1b}}"
+			"nbt": "{raid_uhc:{glaive:1b}}"
 		  }
 		}
 	  }

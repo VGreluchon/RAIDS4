@@ -3,6 +3,7 @@ scoreboard players set #state raid.data 1
 
 ##Téléportation et clear des joueurs
 #spreadplayers 0 0 250 1250 true @a
+kill @e[type=sheep]
 
 ##Timer et Scoreboard
 scoreboard objectives remove raid.sidebar

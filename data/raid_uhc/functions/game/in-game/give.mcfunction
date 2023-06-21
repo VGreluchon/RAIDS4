@@ -10,7 +10,7 @@ give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,Enchantmen
 
 give @a[scores={raid.barbarians=1}] elytra{Unbreakable:1,Enchantments:[{id:"protection",lvl:5}]} 1
 give @a[scores={raid.barbarians=1}] firework_rocket 64
-give @a[scores={raid.orcs=3}] iron_helmet{Unbreakable:1,display:{Name:'[{"text":"Spike Helmet","italic":false}]',Lore:['[{"text":"RAID","italic":false,"color":"red"},{"text":" V4","color":"gold"}]']},Enchantments:[{id:"protection",lvl:5},{id:"thorns",lvl:3}]} 1
+give @a[scores={raid.orcs=3}] iron_helmet{Unbreakable:1,display:{Name:'[{"text":"Spike Helmet","italic":false}]',Lore:['[{"text":"RAID","italic":false,"color":"red"},{"text":" V4","color":"gold"}]']},Enchantments:[{id:"protection",lvl:4},{id:"thorns",lvl:3}]} 1
 
 execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredorder matches 1.. unless score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 30
 execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 26

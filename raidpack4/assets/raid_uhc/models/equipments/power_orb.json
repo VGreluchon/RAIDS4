@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "crazy_adventure:item/equipments/power_orb"
+		"layer0": "raid_uhc:item/equipments/power_orb"
 	}
 }
