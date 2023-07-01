@@ -7,6 +7,7 @@ scoreboard players set @a[scores={raid.lizardmen=5,raid.trigger2=1}] raid.lizard
 scoreboard players set @a[scores={raid.lizardmen=1,raid.trigger2=1}] raid.trigger2 0
 tellraw @a[scores={raid.lizardmen=5,raid.trigger3=2}] ["",{"text":"Champion choisi:","color":"aqua"},{"text":" Quargan the Crowned","color":"yellow"},{"text":"\n"},{"text":"\u25b6","color":"aqua"},{"text":"En restant 30 secondes sur le trône du château des Banner\nLords, tu obtiens une couronne qui te confère les bonus de la bannière.","color":"yellow"}]
 scoreboard players set @a[scores={raid.lizardmen=5,raid.trigger3=1}] raid.lizardmen 3
+tag @a[scores={raid.lizardmen=3}] add raid.heritage
 scoreboard players set @a[scores={raid.lizardmen=1,raid.trigger3=1}] raid.trigger3 0
 
 

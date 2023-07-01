@@ -591,6 +591,12 @@ execute if score #nteam raid.data matches 12 run team modify raid.sidebar.4 suff
 execute if score #nteam raid.data matches 13 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
 execute if score #nteam raid.data matches 14 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"14","color":"white"}]
 
+tag @a[scores={raid.bannerlords=1}] add raid.heritage
+tag @a[scores={raid.highelves=1}] add raid.heritage
+tag @a[scores={raid.demonspawn=1}] add raid.heritage
+tag @a[scores={raid.dwarves=1}] add raid.heritage
+tag @a[scores={raid.undeadhordes=1}] add raid.heritage
+
 execute as @a run function raid_uhc:game/setmarker
 
 function raid_uhc:game/in-game/roles
