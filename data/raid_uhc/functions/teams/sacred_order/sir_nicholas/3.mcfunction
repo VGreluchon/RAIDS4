@@ -2,5 +2,5 @@ tellraw @s ["",{"text":"Salut, ","color":"aqua"},{"selector":"@a[scores={raid.sa
 execute if entity @s[tag=!raid.obsidian_sword] run tellraw @s ["",{"text":"\u25b6 Obsidian Sword:","color":"aqua","clickEvent":{"action":"run_command","value":"trigger raid.trigger1 set 1"}},{"text":" Tous les 3 coups infligés par cette épée t'octroies 1 point d'armure pendant 7 secondes (cumulable 4 fois)","color":"gold"},{"text":"\n"},{"text":"[Prix : 60 cadeaux]","color":"red"}]
 execute if entity @s[tag=!raid.elytra] run tellraw @s ["",{"text":"\u25b6 Traineau Volant:","color":"aqua","clickEvent":{"action":"run_command","value":"trigger raid.trigger2 set 1"}},{"text":" Tu obtiens une paire d'elytra, 10 feux d'artifices et tu en obtiens un chaque minute","color":"gold"},{"text":"\n"},{"text":"[Prix : 60 cadeaux]","color":"red"}]
 execute if entity @s[tag=!raid.shield_stick] run tellraw @s ["",{"text":"\u25b6 Shield Stick:","color":"aqua","clickEvent":{"action":"run_command","value":"trigger raid.trigger3 set 1"}},{"text":" En l'utilisant, ton équipe et toi devenez invincible pendant 5 secondes (10 utilisations, 2 minutes de récupération)","color":"gold"},{"text":"\n"},{"text":"[Prix : 60 cadeaux]","color":"red"}]
-scoreboard players set @s crazy_adventure.spell 0
+scoreboard players set @s raid.spell 0
 

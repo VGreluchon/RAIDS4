@@ -5,7 +5,6 @@ loot give @a[scores={raid.shadowkin=3}] loot raid_uhc:i/glaive
 loot give @a loot raid_uhc:i/power_orb
 loot give @a[scores={raid.skinwalkers=1}] loot raid_uhc:i/claw
 
-give @a[scores={raid.highelves=1}] compass{Tags:["tracker"],display:{Name:'[{"text":"Game Tracking","italic":false}]',Lore:['[{"text":"Raid UHC ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']},Enchantments:[{}]} 1
 give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,Enchantments:[{id:"protection",lvl:4}],RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
 
 give @a[scores={raid.barbarians=1}] elytra{Unbreakable:1,Enchantments:[{id:"protection",lvl:5}]} 1
@@ -17,9 +16,11 @@ execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_hea
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.max_health base set 32
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.attack_damage modifier add 2-2-0-1-0 "10SO" 0.10 multiply_base
 execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 1
+loot give @a[scores={raid.skinwalkers=1}] loot raid_uhc:i/claw
 
 execute as @a[scores={raid.ogryntribes=1}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"1",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 execute as @a[scores={raid.ogryntribes=2}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"2",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 execute as @a[scores={raid.ogryntribes=3}] run summon minecraft:armor_stand ~ -20 ~ {CustomName:"3",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 
 execute as @a[scores={raid.knightsrevenant=3}] run summon minecraft:armor_stand ~ 120 ~ {CustomName:"4",CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
+effect give @a regeneration 5 5 true

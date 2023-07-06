@@ -11,7 +11,8 @@ execute if score #day raid.data matches 300..600 run effect give @s[nbt={Invento
 execute if score #day raid.data matches 300..600 if data entity @s SelectedItem.tag.raid_uhc.claw run effect give @s haste 2 0 true
 execute if score #day raid.data matches 0..300 if data entity @s SelectedItem.tag.raid_uhc.claw run effect give @s mining_fatigue 1 255 true
 execute if score #day raid.data matches 300..600 run effect give @s strength 2 0 true
-
+execute if entity @s[nbt={Inventory:[{id:"minecraft:netherite_sword",tag:{raid_uhc:{claw:1b}}}]}] run tag @s add raid.claw
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_sword",tag:{raid_uhc:{claw:1b}}}]}] run tag @s remove raid.claw
 #En tuant un joueur, il gagne 1♥ permanent et régénère 4♥.
 execute if score @s raid.kill matches 1.. run function raid_uhc:teams/skinwalkers/brakus/2
 

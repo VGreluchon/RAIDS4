@@ -63,3 +63,5 @@ execute as @s[scores={raid.knightsrevenant=1}] run function raid_uhc:teams/knigh
 execute as @s[scores={raid.knightsrevenant=2}] run function raid_uhc:teams/knight_revenant/deathless/1
 execute as @s[scores={raid.knightsrevenant=3}] run function raid_uhc:teams/knight_revenant/crypt_witch/1
 
+execute if entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{raid_uhc:{power_orb:1b}}}]}] run tag @s add raid.orb
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick",tag:{raid_uhc:{power_orb:1b}}}]}] run tag @s remove raid.orb

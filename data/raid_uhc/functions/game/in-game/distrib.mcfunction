@@ -501,6 +501,7 @@ scoreboard players set @a[scores={raid.knightsrevenant=1..}] raid.start 0
 
 scoreboard players set @a[scores={raid.shadowkin=1}] raid.data 1
 
+scoreboard players set #njoueurs raid.data 0
 execute as @a run scoreboard players add #njoueurs raid.data 1
 execute if score #njoueurs raid.data matches 0 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
 execute if score #njoueurs raid.data matches 1 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"1","color":"white"}]
@@ -546,6 +547,7 @@ execute if score #njoueurs raid.data matches 40 run team modify raid.sidebar.3 s
 execute if score #njoueurs raid.data matches 41 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"41","color":"white"}]
 execute if score #njoueurs raid.data matches 42 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"42","color":"white"}]
 
+scoreboard players set #nteam raid.data 0
 execute as @a[team=raid.team.1] run scoreboard players add #team1 raid.data 1
 execute as @a[team=raid.team.2] run scoreboard players add #team2 raid.data 1
 execute as @a[team=raid.team.3] run scoreboard players add #team3 raid.data 1

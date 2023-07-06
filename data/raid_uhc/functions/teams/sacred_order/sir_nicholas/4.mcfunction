@@ -1,7 +1,7 @@
 particle happy_villager ~ ~ ~ ~1 ~1 ~1 1 20
 effect give @a[scores={raid.sacredorder=1..4}] resistance 6 10 true
-scoreboard players set @s crazy_adventure.cooldown2 0
-scoreboard players set @s crazy_adventure.spell 0
+scoreboard players set @s raid.cooldown2 0
+scoreboard players set @s raid.spell 0
 item modify entity @s weapon raid_uhc:shield_stick
 
 scoreboard players set #success raid.data 0

@@ -135,6 +135,5 @@ execute if score #nteam raid.data matches 1 as @a[team=raid.team.11,scores={raid
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.12,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"12","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team12]","color":"gold"}]
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.13,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"13","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team13]","color":"gold"}]
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.14,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"14","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team14]","color":"gold"}]
-execute if score #nteam raid.data matches 1 run scoreboard objectives setdisplay sidebar raid.kills
 
 scoreboard players reset @s
