@@ -55,4 +55,5 @@ scoreboard players set #episode raid.data 0
 scoreboard players set #day raid.data 0
 function raid_uhc:game/started
 
-function raid_uhc:game/in-game/distrib
+execute if score #started raid.data matches 1 run function raid_uhc:game/in-game/distrib
+execute if score #started raid.data matches 2 run function raid_uhc:game/in-game/distrib
