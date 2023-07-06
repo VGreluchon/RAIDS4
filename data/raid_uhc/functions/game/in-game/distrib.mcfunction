@@ -605,3 +605,4 @@ tag @a[scores={raid.knightsrevenant=1}] add raid.treasure
 execute as @a run function raid_uhc:game/setmarker
 
 function raid_uhc:game/in-game/roles
+function raid_uhc:game/in-game/give

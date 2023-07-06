@@ -17,6 +17,8 @@ scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.death 0
 scoreboard players set @a raid.cooldown 11
 
+scoreboard players set @a[scores={raid.shadowkin=1}] raid.data 1
+
 execute as @a run scoreboard players add #njoueurs raid.data 1
 execute if score #njoueurs raid.data matches 0 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
 execute if score #njoueurs raid.data matches 1 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"1","color":"white"}]
@@ -121,3 +123,4 @@ tag @a[scores={raid.knightsrevenant=1}] add raid.treasure
 execute as @a run function raid_uhc:game/setmarker
 
 function raid_uhc:game/in-game/roles
+function raid_uhc:game/in-game/give

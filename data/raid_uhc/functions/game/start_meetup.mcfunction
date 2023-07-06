@@ -3,9 +3,16 @@ scoreboard players set #state raid.data 1
 
 ##Téléportation et clear des joueurs
 #spreadplayers 0 0 250 1250 true @a
-give @a cooked_beef 48
-give @a apple 10
-give @a book 1
+clear @a
+give @a diamond_helmet{Enchantments:[{id:"protection",lvl:2}]} 1
+give @a iron_chestplate{Enchantments:[{id:"protection",lvl:3}]} 1
+give @a diamond_leggings{Enchantments:[{id:"protection",lvl:2}]} 1
+give @a diamond_boots{Enchantments:[{id:"protection",lvl:2}]} 1
+give @a diamond_sword{Enchantments:[{id:"sharpness",lvl:3}]} 1
+give @a cooked_beef 58
+give @a golden_apple 10
+
+
 
 ##Timer et Scoreboard
 scoreboard objectives remove raid.sidebar
@@ -55,6 +62,6 @@ team join raid.sidebar.0 ▬
 scoreboard players set #temps raid.data 1200
 scoreboard players set #episode raid.data 0
 scoreboard players set #day raid.data 0
-function raid_uhc:game/started
+function raid_uhc:game/started_meetup
 
-execute if score #started raid.data matches 1 run function raid_uhc:game/in-game/distrib
+execute if score #started raid.data matches 1 run function raid_uhc:game/in-game/distrib_meetup

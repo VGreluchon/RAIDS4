@@ -1,8 +1,3 @@
-#Faire spawn le stuff ???
-data modify storage raid_uhc:main Inventory set from entity @s Inventory
-#je pense c'est indispensable
-
-
 
 #elim joueur
 gamemode spectator @s
@@ -143,4 +138,3 @@ execute if score #nteam raid.data matches 1 as @a[team=raid.team.14,scores={raid
 execute if score #nteam raid.data matches 1 run scoreboard objectives setdisplay sidebar raid.kills
 
 scoreboard players reset @s
-scoreboard players set @s raid.death 2

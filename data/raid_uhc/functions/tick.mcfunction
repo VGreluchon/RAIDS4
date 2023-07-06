@@ -19,3 +19,5 @@ scoreboard players reset @a[scores={raid.lizardmen=1..}] raid.trigger3
 execute if score #started raid.data matches 1.. as @a[scores={raid.death=1}] run function raid_uhc:game/in-game/death
 
 execute if score #started raid.data matches 1.. as @e[tag=raid.player,type=marker] run function raid_uhc:game/in-game/detect
+
+scoreboard players enable @a raid.role
