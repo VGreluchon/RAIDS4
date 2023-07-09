@@ -1,5 +1,2 @@
-tag @s add raid.temp
-execute as @e[type=arrow,distance=..1] run function raid_uhc:teams/dark_elves/passif3
-tag @s remove raid.temp
-
-scoreboard players set @s raid.cooldown 0
+execute on target if predicate raid_uhc:arrow run effect give @s weakness 5 0 true
+advancement revoke @s only raid_uhc:technical/bow

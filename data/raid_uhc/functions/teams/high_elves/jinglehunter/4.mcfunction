@@ -1,3 +1,0 @@
-summon lightning_bolt ~ ~ ~
-execute on passengers run kill @s
-kill @s

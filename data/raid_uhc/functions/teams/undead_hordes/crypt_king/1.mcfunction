@@ -16,8 +16,7 @@ execute if entity @s[tag=raid.spider] as @a[distance=..5,scores={raid.undeadhord
 #Zombie: Il donne l’effet Hunger aux ennemis proches
 execute if entity @s[tag=raid.zombie] as @a[distance=..5,scores={raid.undeadhordes=0}] run effect give @s hunger 2 1 true
 #Creeper: Ses flèches ont 5% de chance de faire une explosion
-execute if entity @s[tag=raid.creeper] as @e[type=arrow,tag=explo,nbt={inGround:1b}] run function raid_uhc:teams/undead_hordes/crypt_king/4
-execute if entity @s[tag=raid.creeper] as @e[type=marker,predicate=!raid_uhc:ride,tag=raid.arrow,tag=raid.explo] run function raid_uhc:teams/undead_hordes/crypt_king/4
+execute if entity @s[tag=raid.creeper,advancements={raid_uhc:technical/bow=true}] run function raid_uhc:teams/undead_hordes/crypt_king/3
 
 
 title @s actionbar ["",{"text":"Hang glider: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"},{"text":"%","color":"#0F6FD8"}]

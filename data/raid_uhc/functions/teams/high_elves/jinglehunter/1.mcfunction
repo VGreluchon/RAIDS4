@@ -1,7 +1,8 @@
 function raid_uhc:teams/high_elves/passif
 #Loaded arrow: Sans tirer de flèches pendant 10 secondes, sa prochaine flèche fait tomber un éclair en atterrissant.
-execute as @e[type=arrow,tag=lightning_bolt,nbt={inGround:1b}] run function raid_uhc:teams/high_elves/jinglehunter/4
-execute as @e[type=marker,predicate=!raid_uhc:ride,tag=raid.arrow,tag=raid.lightning_bolt] run function raid_uhc:teams/high_elves/jinglehunter/4
+execute if entity @s[scores={raid.cooldown=10..}] run function raid_uhc:teams/high_elves/jinglehunter/3
+execute if entity @s[scores={raid.cooldown=..9},advancements={raid_uhc:technical/bow=true}] run scoreboard players set @s raid.cooldown 0
+execute if entity @s[scores={raid.cooldown=..9},advancements={raid_uhc:technical/bow=true}] run advancement revoke @s only raid_uhc:technical/bow
 
 #Loaded attack: Sans mettre de coups d’épée pendant 10 secondes, son prochain coup fait apparaître des éclairs tout autour de lui
 #fait advancement

@@ -1,3 +1,2 @@
-tag @s add raid.temp
-execute as @e[type=arrow,distance=..1] run function raid_uhc:teams/knight_revenant/crypt_witch/3bis
-tag @s remove raid.temp
+execute on target if predicate raid_uhc:arrow if predicate raid_uhc:0.05 run summon lightning_bolt ~ ~ ~
+advancement revoke @s only raid_uhc:technical/bow
