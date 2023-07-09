@@ -16,6 +16,8 @@
 #    min += 1
 #
 #f.close()
+scoreboard players add @a raid.cooldown 1
+scoreboard players add @a raid.cooldown2 1
 
 scoreboard players remove #temps raid.data 1
 scoreboard players add #day raid.data 1

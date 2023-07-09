@@ -1,5 +1,6 @@
 
 #elim joueur
+function raid_uhc:game/in-game/dropinv
 gamemode spectator @s
 scoreboard players remove #njoueurs raid.data 1
 execute if score #njoueurs raid.data matches 0 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]

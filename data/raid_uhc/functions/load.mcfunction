@@ -42,6 +42,9 @@ scoreboard objectives add raid.damagetaken custom:damage_taken
 scoreboard objectives add raid.jump custom:jump
 scoreboard objectives add raid.swim custom:swim_one_cm
 scoreboard objectives add raid.gold mined:gold_ore
+scoreboard objectives add raid.x dummy
+scoreboard objectives add raid.y dummy
+scoreboard objectives add raid.z dummy
 
 gamerule announceAdvancements false
 gamerule doImmediateRespawn true

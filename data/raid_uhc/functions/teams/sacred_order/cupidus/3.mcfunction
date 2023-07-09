@@ -6,9 +6,3 @@ execute if entity @s[scores={raid.stat=5}] as @a[scores={raid.sacredorder=1..4}]
 execute if entity @s[scores={raid.stat=6}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd06 "06" 1 add
 execute if entity @s[scores={raid.stat=7}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd07 "07" 1 add
 execute if entity @s[scores={raid.stat=8}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd08 "08" 1 add
-execute if entity @s[scores={raid.stat=9}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd09 "09" 1 add
-execute if entity @s[scores={raid.stat=10}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd10 "10" 1 add
-execute if entity @s[scores={raid.stat=11}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd11 "11" 1 add
-execute if entity @s[scores={raid.stat=12}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd12 "12" 1 add
-execute if entity @s[scores={raid.stat=13}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd13 "13" 1 add
-execute if entity @s[scores={raid.stat=14}] as @a[scores={raid.sacredorder=1..4}] run attribute @s generic.max_health modifier add 5b89aa77-f19f-4c08-8cb5-b428da98bd14 "14" 1 add
