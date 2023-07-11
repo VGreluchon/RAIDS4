@@ -11,17 +11,13 @@ execute if entity @s[tag=raid.firstchoicemade,tag=raid.spider,tag=raid.skeleton,
 #Zombie: Il donne l’effet Hunger aux ennemis proches
 execute if entity @s[tag=raid.zombie] as @a[distance=..5,scores={raid.knightsrevenant=0}] run effect give @s hunger 2 1 true
 #Creeper: Ses flèches ont 5% de chance de faire une explosion
-execute if entity @s[tag=raid.creeper,advancements={raid_uhc:technical/bow=true}] run function raid_uhc:teams/knight_revenant/crypt_witch/3
 #Araignée: Toutes les 3 minutes elle obtient un oeuf qui, une fois lancée, fait apparaître une toile d'araignée sur le point d’impact.
-execute if score @s[tag=raid.spider] raid.cooldown matches 180.. run give @s egg 1
-execute if score @s[tag=raid.spider] raid.cooldown matches 180.. run scoreboard players set @s raid.cooldown 0
-execute if entity @s[tag=raid.creeper,advancements={raid_uhc:technical/egg=true}] run function raid_uhc:teams/knight_revenant/crypt_witch/4
-#Squelette: Obtient un arc spécial qu’elle ne peut pas enchanter mais dont les flèches sont téléguidées.
-
-
+execute if score @s[tag=raid.spider] raid.cooldown matches 600.. run give @s egg 1
+execute if score @s[tag=raid.spider] raid.cooldown matches 600.. run scoreboard players set @s raid.cooldown 0
+execute if score @s[tag=raid.spider] raid.egg matches 1.. run function raid_uhc:teams/knight_revenant/crypt_witch/3
 #En se rendant au château des Banner Lords, elle obtient les coordonnées de l’endroit où est enfoui leur trésor, cependant, les autres équipes obtiennent ces coordonnées 90 secondes après elle
 
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..179 run title @s actionbar ["",{"text":"+1 Egg: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/180","color":"#0F6FD8"}]
-execute if score @s raid.cooldown matches 180.. run title @s actionbar ["",{"text":"+1 Egg: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]
+execute if score @s raid.cooldown matches ..599 run title @s actionbar ["",{"text":"+1 Egg: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/600","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches 600.. run title @s actionbar ["",{"text":"+1 Egg: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

@@ -3,8 +3,8 @@ function raid_uhc:teams/dwarves/passif
 execute as @a[distance=..5,scores={raid.dwarves=0}] run effect give @s slowness 2 0 true
 
 #Cryonics cages: En utilisant son orbe de pouvoir, il enferme les ennemis dans un rayon de 15 blocs dans une cage de glace (10 minutes de délai de récupération)
-execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 600.. run function raid_uhc:teams/dwarves/tormin/2
 execute unless score @s[scores={raid.spell=1..}] raid.cooldown matches 600.. run scoreboard players set @s raid.spell 0
+execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 600.. run function raid_uhc:teams/dwarves/tormin/2
 
 #Txt capacité prête ou non:
 execute if score @s raid.cooldown matches ..599 run title @s actionbar ["",{"text":"Cryonics cages: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/600","color":"#0F6FD8"}]

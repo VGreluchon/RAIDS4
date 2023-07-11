@@ -1,11 +1,12 @@
 {
 	"criteria": {
 	  "requirement": {
-		"trigger": "minecraft:player_hurt_entity",
+		"trigger": "minecraft:entity_hurt_player",
 		"conditions": {
-		  "player": [],
-		  "entity": {
-			"type": "minecraft:player"
+		  "damage": {
+			"source_entity": {
+			  "type": "minecraft:player"
+			}
 		  }
 		}
 	  }

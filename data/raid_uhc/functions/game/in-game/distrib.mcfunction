@@ -17,6 +17,11 @@ scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.death 0
 scoreboard players set @a raid.cooldown 11
 
+tag @a remove raid.shield_stick
+tag @a remove raid.obsidian_sword
+tag @a remove raid.end_sir_nicholas
+tag @a remove raid.elytra
+
 scoreboard players set @a raid.start 1
 
 execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.bannerlords 1

@@ -1,4 +1,5 @@
 
+
 execute as @s[scores={raid.bannerlords=1}] run function raid_uhc:teams/banner_lords/lord_champfort/1
 execute as @s[scores={raid.bannerlords=2}] run function raid_uhc:teams/banner_lords/richtoff/1
 execute as @s[scores={raid.bannerlords=3}] run function raid_uhc:teams/banner_lords/duelist/1

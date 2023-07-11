@@ -1,7 +1,7 @@
 function raid_uhc:teams/sacred_order/passif
 #Gift hunt: collecte des cadeaux en faisant des dégâts et en tuant des joueurs, en collectionnant ces cadeaux, il peut choisir des items exclusifs.
 #Ouvrir message chat pour cadeaux
-execute if entity @s[tag=!raid.end_sir_nicholas] if data entity @s SelectedItem.tag.raid_uhc.power_orb run function raid_uhc:teams/sacred_order/sir_nicholas/3
+execute if entity @s[tag=!raid.end_sir_nicholas,scores={raid.spell=1..}] if data entity @s SelectedItem.tag.raid_uhc.power_orb run function raid_uhc:teams/sacred_order/sir_nicholas/3
 #Liste des items qu'il peut s'acheter :
 #-Shield Stick: empêche son équipe de prendre des dégâts pendant 5 secondes (10 utilisations, 2 minutes de délai de récupération); fait
 execute if entity @s[scores={raid.trigger3=1..}] run function raid_uhc:teams/sacred_order/sir_nicholas/trigger3

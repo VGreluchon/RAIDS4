@@ -6,4 +6,4 @@ execute as @e[type=armor_stand,name="1"] run effect give @a[scores={raid.sacredo
 execute as @e[type=armor_stand,name="2"] run effect give @a[scores={raid.sacredorder=2},distance=..50] haste 3 0 true
 execute as @e[type=armor_stand,name="3"] run effect give @a[scores={raid.sacredorder=3},distance=..50] haste 3 0 true
  #Au dessus de 13♥, ils ont l’effet Résistance 2
-effect give @s[scores={raid.life=25..}] resistance 2 1 true
+effect give @s[scores={raid.life=26..}] resistance 2 1 true

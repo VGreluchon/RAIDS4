@@ -17,6 +17,11 @@ scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.death 0
 scoreboard players set @a raid.cooldown 11
 
+tag @a remove raid.shield_stick
+tag @a remove raid.obsidian_sword
+tag @a remove raid.end_sir_nicholas
+tag @a remove raid.elytra
+
 scoreboard players set #njoueurs raid.data 0
 execute as @a run scoreboard players add #njoueurs raid.data 1
 execute if score #njoueurs raid.data matches 0 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
