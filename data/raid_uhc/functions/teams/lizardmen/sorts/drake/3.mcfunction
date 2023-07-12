@@ -12,8 +12,8 @@ scoreboard players operation #dx raid.data -= #x raid.data
 scoreboard players operation #dy raid.data -= #y raid.data
 scoreboard players operation #dz raid.data -= #z raid.data
 
-execute store result entity @s Motion[0] double 0.007 run scoreboard players get #dx raid.data
-execute store result entity @s Motion[1] double 0.007 run scoreboard players get #dy raid.data
-execute store result entity @s Motion[2] double 0.007 run scoreboard players get #dz raid.data
+execute store result entity @s Motion[0] double 0.003 run scoreboard players get #dx raid.data
+execute store result entity @s Motion[1] double 0.003 run scoreboard players get #dy raid.data
+execute store result entity @s Motion[2] double 0.003 run scoreboard players get #dz raid.data
 
-tag @s remove raid.dragon_fireball
+tag @s remove raid.fireball

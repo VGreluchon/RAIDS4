@@ -93,20 +93,35 @@ execute if entity @s[team=raid.team.12] if score #team12 raid.data matches 0 run
 execute if entity @s[team=raid.team.13] if score #team13 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"13","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 execute if entity @s[team=raid.team.14] if score #team14 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"14","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.2] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.3] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.4] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.5] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.6] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.7] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=1}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.2] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.3] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.4] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.5] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.6] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.7] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.2] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.3] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.4] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.5] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.6] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.7] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
 
 execute if score #nteam raid.data matches 1 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"1","color":"white"}]
 execute if score #nteam raid.data matches 2 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"2","color":"white"}]

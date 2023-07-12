@@ -43,7 +43,7 @@ team modify raid.sidebar.2 color yellow
 team modify raid.sidebar.1 color yellow
 team modify raid.sidebar.0 color gray
 team modify raid.sidebar.7 suffix {"text":"▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color":"gray"}
-team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"0 h 0 min","color":"green"}]
+team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"1 h 30 min","color":"green"}]
 team modify raid.sidebar.5 suffix [{"text":"ille","color":"aqua"},{"text":" » ","color":"gray"},{"text":"2500 blocs","color":"white"}]
 team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
 team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
@@ -62,6 +62,7 @@ team join raid.sidebar.0 ▬
 scoreboard players set #temps raid.data 1200
 scoreboard players set #episode raid.data 0
 scoreboard players set #day raid.data 0
+time set day
 function raid_uhc:game/started_meetup
 
 function raid_uhc:game/in-game/distrib_meetup

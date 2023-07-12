@@ -17,5 +17,5 @@ execute if entity @s[tag=raid.speed] as @a[scores={raid.dwarves=1..3,raid.life=2
 #- Force I entre 5 et 7♥
 execute if entity @s[tag=raid.force] as @a[scores={raid.dwarves=1..3,raid.life=9..15}] run effect give @s strength 3 0 true
 #- Résistance I entre 8 et 11♥
-execute if entity @s[tag=raid.force] as @a[scores={raid.dwarves=1..3,raid.life=16..23}] run effect give @s resistance 3 0 true
+execute if entity @s[tag=raid.resi] as @a[scores={raid.dwarves=1..3,raid.life=16..23}] run effect give @s resistance 3 0 true
 #En se rendant au château des Banner Lords, il obtient les coordonnées de l’endroit où est enfoui leur trésor, cependant, les autres équipes obtiennent ces coordonnées 90 secondes après lui

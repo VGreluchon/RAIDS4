@@ -6,7 +6,6 @@ execute if entity @s[scores={raid.highelves=2,raid.cooldown2=..9,raid.damage=1..
 #Loaded arrow: Sans tirer de flèches pendant 10 secondes, sa prochaine flèche fait tomber un éclair en atterrissant.
 execute if entity @s[scores={raid.cooldown=..9,raid.bow=1..}] run function raid_uhc:teams/high_elves/jinglehunter/4
 
-
 #Loaded attack: Sans mettre de coups d’épée pendant 10 secondes, son prochain coup fait apparaître des éclairs tout autour de lui
 #fait advancement
 
