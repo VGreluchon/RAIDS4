@@ -5,4 +5,4 @@ execute as @s[scores={raid.spell=1..}] if score @s raid.stat matches 10.. run fu
 execute as @s[scores={raid.spell=1..}] if score @s raid.stat matches ..10 run scoreboard players set @s raid.spell 0
 #-Tenir leur orbe de pouvoir dans la seconde main leur octroie l’effet slow falling
 data modify storage raid_uhc:main Inventory set from entity @s Inventory
-execute if data storage raid_uhc:main Inventory[{Slot:99b}].tag.raid_uhc.power_orb run effect give @s slow_falling 2 0 true
+execute if data storage raid_uhc:main Inventory[{Slot:-106b}].tag.raid_uhc.power_orb run effect give @s slow_falling 2 0 true

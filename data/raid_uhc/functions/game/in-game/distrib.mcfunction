@@ -14,8 +14,10 @@ scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.knightsrevenant 0
 scoreboard players set @a raid.stat 0
+scoreboard players set @a raid.data 0
 scoreboard players set @a raid.death 0
-scoreboard players set @a raid.cooldown 11
+scoreboard players set @a raid.cooldown 0
+scoreboard players set @a raid.cooldown2 0
 
 tag @a remove raid.shield_stick
 tag @a remove raid.obsidian_sword
@@ -110,6 +112,7 @@ execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03d
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03e
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03f
+execute as @a run attribute @s generic.max_health modifier remove 790b5f00-ee04-41cc-b9f4-d303cf58500e
 
 scoreboard players set @a raid.start 1
 

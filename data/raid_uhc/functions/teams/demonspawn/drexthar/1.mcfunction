@@ -1,4 +1,4 @@
-function raid_uhc:teams/dark_elves/passif
+function raid_uhc:teams/demonspawn/passif
 #Fraternal link: En étant proche d’Inithwe (10 blocs), il obtient l’effet Resistance I.
 execute if entity @a[scores={raid.demonspawn=3},distance=..11] run effect give @s resistance 2 0 true
 

@@ -1,1 +1,1 @@
-fill ~5 ~-2 ~5 ~-5 ~3 ~-5 fire replace air
+fill ~2 ~-1 ~2 ~-2 ~1 ~-2 fire replace air

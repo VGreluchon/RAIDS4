@@ -14,8 +14,10 @@ scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.knightsrevenant 0
 scoreboard players set @a raid.stat 0
+scoreboard players set @a raid.data 0
 scoreboard players set @a raid.death 0
-scoreboard players set @a raid.cooldown 11
+scoreboard players set @a raid.cooldown 0
+scoreboard players set @a raid.cooldown2 0
 
 tag @a remove raid.shield_stick
 tag @a remove raid.obsidian_sword
@@ -31,6 +33,10 @@ tag @a remove raid.regen
 tag @a remove raid.resi
 tag @a remove raid.force
 tag @a remove raid.speed
+tag @a remove raid.allrunes
+tag @a remove raid.endcollection
+tag @a remove raid.raid.firstchoicemade
+
 execute as @a run attribute @s generic.attack_damage modifier remove 1-1-1-1-1
 execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
 execute as @a run attribute @s generic.max_health modifier remove 1947c83f-37ad-4371-8fa0-aeff6a5ba601
@@ -110,6 +116,7 @@ execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03d
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03e
 execute as @a run attribute @s generic.max_health modifier remove f5559073-0181-4630-8691-49aa8e81e03f
+execute as @a run attribute @s generic.max_health modifier remove 790b5f00-ee04-41cc-b9f4-d303cf58500e
 
 scoreboard players set #njoueurs raid.data 0
 execute as @a run scoreboard players add #njoueurs raid.data 1

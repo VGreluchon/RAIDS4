@@ -1,4 +1,4 @@
-function raid_uhc:teams/dark_elves/passif
+function raid_uhc:teams/demonspawn/passif
 #Fraternal link: En étant proche de Drexthar, il obtient 20% de dégâts en plus
 execute if entity @a[scores={raid.demonspawn=3},distance=..11] run attribute @s minecraft:generic.attack_damage modifier add 1-1-1-1-1 "uwu20" 0.20 multiply_base
 execute if entity @a[scores={raid.demonspawn=3},distance=12..] run attribute @s minecraft:generic.attack_damage modifier remove 1-1-1-1-1

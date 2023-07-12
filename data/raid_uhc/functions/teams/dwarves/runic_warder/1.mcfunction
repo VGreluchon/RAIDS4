@@ -11,7 +11,8 @@ execute if entity @s[tag=raid.firstchoicemade,tag=raid.regen,tag=raid.resi,tag=r
 
 #Liste des runes:
 #- Régénération I en dessous de 4♥
-execute if entity @s[tag=raid.regen] as @a[scores={raid.dwarves=1..3,raid.life=..8}] run effect give @s regeneration 3 0 true
+execute if entity @s[tag=raid.regen] as @a[scores={raid.dwarves=1..3,raid.life=..8,raid.cooldown=3..}] run effect give @s regeneration 3 0 true
+execute if entity @s[tag=raid.regen] as @a[scores={raid.dwarves=1..3,raid.life=..8,raid.cooldown=3..}] run scoreboard players set @s raid.cooldown 0
 #- Vitesse I au dessus de 12 ♥
 execute if entity @s[tag=raid.speed] as @a[scores={raid.dwarves=1..3,raid.life=24..}] run effect give @s speed 3 0 true
 #- Force I entre 5 et 7♥

@@ -18,9 +18,4 @@ execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.
 execute as @a if score @s raid.knightsrevenant matches 3 run attribute @s generic.max_health base set 1
 loot give @a[scores={raid.skinwalkers=1}] loot raid_uhc:i/claw
 
-execute as @a[scores={raid.ogryntribes=1}] run summon minecraft:armor_stand ~ -20 ~ {Tags:["1"],CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
-execute as @a[scores={raid.ogryntribes=2}] run summon minecraft:armor_stand ~ -20 ~ {Tags:["2"],CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
-execute as @a[scores={raid.ogryntribes=3}] run summon minecraft:armor_stand ~ -20 ~ {Tags:["3"],CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
-
-execute as @a[scores={raid.knightsrevenant=3}] run summon minecraft:armor_stand ~ 120 ~ {Tags:["4"],CustomNameVisible:0,NoAI:1b,Invulnerable:1,NoGravity:1b,Invisible:1b}
 effect give @a regeneration 5 5 true
