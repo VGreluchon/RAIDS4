@@ -94,7 +94,7 @@ execute if score #border_timer raid.data matches 5340 run team modify raid.sideb
 execute if score #border_timer raid.data matches 5400 run team modify raid.sidebar.6 suffix [{"text":"rdure","color":"aqua"},{"text":" » ","color":"gray"},{"text":"1 h 30 min ","color":"green"}]
 
 execute if score #border_timer raid.data matches 510 run function raid_uhc:game/in-game/castle1
-execute if score #border_timer raid.data matches 420 as @e[type=armor_stand,name="castle"] run function raid_uhc:game/in-game/castle2
+execute if score #border_timer raid.data matches 420 as @e[type=armor_stand,tag=castle] run function raid_uhc:game/in-game/castle2
 execute if score #border_timer raid.data matches ..420 run function raid_uhc:game/in-game/castle3
 
 

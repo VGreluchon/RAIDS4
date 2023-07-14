@@ -36,10 +36,10 @@ execute as @a[scores={raid.castle=30}] run tellraw @s ["",{"text":"Crown","color
 execute if entity @s[tag=raid.crown] as @a[scores={raid.castle=1..},distance=5..,tag=raid.heritage] run tellraw @s ["",{"text":"Trop éloigné, récupération réinitialisée","color":"red"}]
 execute if entity @s[tag=raid.crown] as @a[scores={raid.castle=1..},distance=5..,tag=raid.heritage] run scoreboard players set @s raid.castle 0
 
-execute if entity @a[scores={raid.castle=30}] run tag @e[type=armor_stand,name="castle"] remove raid.crown
+execute if entity @a[scores={raid.castle=30}] run tag @e[type=armor_stand,tag=castle] remove raid.crown
 execute as @a[scores={raid.castle=30}] run loot give @s loot raid_uhc:i/crown
 
 execute as @a[tag=raid.treasure,distance=..20] run function raid_uhc:game/in-game/treasure
 
-scoreboard players add @e[type=armor_stand,name="treasure"] raid.cooldown 1
+scoreboard players add @e[type=armor_stand,tag=treasure] raid.cooldown 1
 tellraw @a ["",{"text":"Le trésor du chateau se situe aux coordonnées suivantes:","color":"aqua"},{"text":"\n"},{"text":"X=","color":"red"},{"score":{"name":"@e[type=armor_stand,name=\"treasure\",limit=1]","objective":"raid.data"},"color":"gold"},{"text":" Y=","color":"red"},{"score":{"name":"@e[type=armor_stand,name=\"treasure\",limit=1]","objective":"raid.sprint"},"color":"gold"},{"text":" Z=","color":"red"},{"score":{"name":"@e[type=armor_stand,name=\"treasure\",limit=1]","objective":"raid.stat"},"color":"gold"}]
