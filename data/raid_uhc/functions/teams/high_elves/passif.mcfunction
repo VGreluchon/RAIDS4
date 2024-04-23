@@ -1,4 +1,4 @@
-#Leurs flèches ralentissent leurs cibles pendant 2 secondes.
+#Speed 1 avec arc dans la main
 effect give @s[nbt={SelectedItem:{id:"minecraft:bow"}}] speed 1 0 true
 
 
