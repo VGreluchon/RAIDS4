@@ -1,4 +1,4 @@
-tellraw @a[tag=convention.debug] {"text":"[Loaded Raid UHC V4.0]","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded Raid UHC V4.1]","color":"green"}
 tag Arobaze add convention.debug
 
 scoreboard objectives add raid.bannerlords dummy
@@ -6,16 +6,13 @@ scoreboard objectives add raid.highelves dummy
 scoreboard objectives add raid.sacredorder dummy
 scoreboard objectives add raid.barbarians dummy
 scoreboard objectives add raid.ogryntribes dummy
-scoreboard objectives add raid.lizardmen dummy
-scoreboard objectives add raid.lizardmen2 dummy
 scoreboard objectives add raid.shadowkin dummy
 scoreboard objectives add raid.skinwalkers dummy
 scoreboard objectives add raid.demonspawn dummy
 scoreboard objectives add raid.dwarves dummy
-scoreboard objectives add raid.darkelves dummy
 scoreboard objectives add raid.undeadhordes dummy
 scoreboard objectives add raid.orcs dummy
-scoreboard objectives add raid.knightsrevenant dummy
+
 
 scoreboard objectives add raid.role trigger
 scoreboard objectives add raid.start dummy
@@ -48,7 +45,6 @@ scoreboard objectives add raid.z dummy
 
 gamerule announceAdvancements false
 gamerule doImmediateRespawn true
-gamerule keepInventory true
 gamerule showDeathMessages false
 gamerule naturalRegeneration false
 gamerule doDaylightCycle false
@@ -64,9 +60,7 @@ team add raid.team.8
 team add raid.team.9
 team add raid.team.10
 team add raid.team.11
-team add raid.team.12
-team add raid.team.13
-team add raid.team.14
+
 team modify raid.team.1 nametagVisibility hideForOtherTeams
 team modify raid.team.2 nametagVisibility hideForOtherTeams
 team modify raid.team.3 nametagVisibility hideForOtherTeams
@@ -78,9 +72,6 @@ team modify raid.team.8 nametagVisibility hideForOtherTeams
 team modify raid.team.9 nametagVisibility hideForOtherTeams
 team modify raid.team.10 nametagVisibility hideForOtherTeams
 team modify raid.team.11 nametagVisibility hideForOtherTeams
-team modify raid.team.12 nametagVisibility hideForOtherTeams
-team modify raid.team.13 nametagVisibility hideForOtherTeams
-team modify raid.team.14 nametagVisibility hideForOtherTeams
 
 
 #define storage raid_uhc:main

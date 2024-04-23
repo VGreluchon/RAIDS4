@@ -4,15 +4,12 @@ scoreboard players set @a raid.highelves 0
 scoreboard players set @a raid.sacredorder 0
 scoreboard players set @a raid.barbarians 0
 scoreboard players set @a raid.ogryntribes 0
-scoreboard players set @a raid.lizardmen 0
 scoreboard players set @a raid.shadowkin 0
 scoreboard players set @a raid.skinwalkers 0
 scoreboard players set @a raid.demonspawn 0
 scoreboard players set @a raid.dwarves 0
-scoreboard players set @a raid.darkelves 0
 scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
-scoreboard players set @a raid.knightsrevenant 0
 scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.data 0
 scoreboard players set @a raid.death 0
@@ -33,8 +30,6 @@ tag @a remove raid.regen
 tag @a remove raid.resi
 tag @a remove raid.force
 tag @a remove raid.speed
-tag @a remove raid.allrunes
-tag @a remove raid.endcollection
 tag @a remove raid.raid.firstchoicemade
 
 execute as @a run attribute @s generic.attack_damage modifier remove 1-1-1-1-1
@@ -176,9 +171,6 @@ execute as @a[team=raid.team.8] run scoreboard players add #team8 raid.data 1
 execute as @a[team=raid.team.9] run scoreboard players add #team9 raid.data 1
 execute as @a[team=raid.team.10] run scoreboard players add #team10 raid.data 1
 execute as @a[team=raid.team.11] run scoreboard players add #team11 raid.data 1
-execute as @a[team=raid.team.12] run scoreboard players add #team12 raid.data 1
-execute as @a[team=raid.team.13] run scoreboard players add #team13 raid.data 1
-execute as @a[team=raid.team.14] run scoreboard players add #team14 raid.data 1
 
 execute if score #team1 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
 execute if score #team2 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
@@ -206,9 +198,6 @@ execute if score #nteam raid.data matches 8 run team modify raid.sidebar.4 suffi
 execute if score #nteam raid.data matches 9 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"9","color":"white"}]
 execute if score #nteam raid.data matches 10 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"10","color":"white"}]
 execute if score #nteam raid.data matches 11 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"11","color":"white"}]
-execute if score #nteam raid.data matches 12 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"12","color":"white"}]
-execute if score #nteam raid.data matches 13 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
-execute if score #nteam raid.data matches 14 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"14","color":"white"}]
 
 tag @a[scores={raid.bannerlords=1}] add raid.heritage
 tag @a[scores={raid.highelves=1}] add raid.heritage
@@ -219,7 +208,6 @@ tag @a[scores={raid.undeadhordes=1}] add raid.heritage
 tag @a[scores={raid.ogryntribes=2}] add raid.treasure
 tag @a[scores={raid.dwarves=3}] add raid.treasure
 tag @a[scores={raid.orcs=1}] add raid.treasure
-tag @a[scores={raid.knightsrevenant=1}] add raid.treasure
 
 execute as @a run function raid_uhc:game/setmarker
 

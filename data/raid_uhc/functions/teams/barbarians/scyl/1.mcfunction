@@ -1,6 +1,6 @@
 function raid_uhc:teams/barbarians/passif
 
-#Dragon breath: En utilisant son orbe de pouvoir, elle lance une boule de souffle de dragon qui a les mêmes caractéristiques que celles lancées par l’Ender Dragon (4 minutes de délai de récupération)
+#Dragon breath: En utilisant son orbe de pouvoir, elle lance une boule de feu (4 minutes de délai de récupération)
 execute if score @s[scores={raid.spell=1..}] raid.cooldown matches ..299 run scoreboard players set @s raid.spell 0
 execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 300.. run function raid_uhc:teams/barbarians/scyl/2
 

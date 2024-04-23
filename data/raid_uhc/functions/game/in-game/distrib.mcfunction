@@ -4,15 +4,12 @@ scoreboard players set @a raid.highelves 0
 scoreboard players set @a raid.sacredorder 0
 scoreboard players set @a raid.barbarians 0
 scoreboard players set @a raid.ogryntribes 0
-scoreboard players set @a raid.lizardmen 0
 scoreboard players set @a raid.shadowkin 0
 scoreboard players set @a raid.skinwalkers 0
 scoreboard players set @a raid.demonspawn 0
 scoreboard players set @a raid.dwarves 0
-scoreboard players set @a raid.darkelves 0
 scoreboard players set @a raid.undeadhordes 0
 scoreboard players set @a raid.orcs 0
-scoreboard players set @a raid.knightsrevenant 0
 scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.data 0
 scoreboard players set @a raid.death 0
@@ -23,10 +20,6 @@ tag @a remove raid.shield_stick
 tag @a remove raid.obsidian_sword
 tag @a remove raid.end_sir_nicholas
 tag @a remove raid.elytra
-tag @a remove raid.creeper
-tag @a remove raid.skeleton
-tag @a remove raid.spider
-tag @a remove raid.zombie
 tag @a remove raid.heritage
 tag @a remove raid.treasure
 tag @a remove raid.regen
@@ -308,38 +301,6 @@ execute if entity @a[scores={raid.ogryntribes=1},team=raid.team.14] run scoreboa
 
 scoreboard players set @a[scores={raid.ogryntribes=1..}] raid.start 0
 
-execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.lizardmen=0}] raid.lizardmen 4
-execute if entity @a[scores={raid.lizardmen=4},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.lizardmen=0}] raid.lizardmen 4
-
-scoreboard players set @a[scores={raid.lizardmen=1..}] raid.start 0
-
 execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.shadowkin 1
 execute if entity @a[scores={raid.shadowkin=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.shadowkin=0}] raid.shadowkin 2
 execute if entity @a[scores={raid.shadowkin=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.shadowkin=0}] raid.shadowkin 3
@@ -468,37 +429,6 @@ execute if entity @a[scores={raid.dwarves=1},team=raid.team.14] run scoreboard p
 
 scoreboard players set @a[scores={raid.dwarves=1..}] raid.start 0
 
-execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.darkelves 1
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.darkelves=0}] raid.darkelves 3
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.darkelves=0}] raid.darkelves 2
-execute if entity @a[scores={raid.darkelves=1},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.darkelves=0}] raid.darkelves 3
-
-scoreboard players set @a[scores={raid.darkelves=1..}] raid.start 0
 
 execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.undeadhordes 1
 execute if entity @a[scores={raid.undeadhordes=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.undeadhordes=0}] raid.undeadhordes 2
@@ -564,38 +494,6 @@ execute if entity @a[scores={raid.orcs=1},team=raid.team.14] run scoreboard play
 
 scoreboard players set @a[scores={raid.orcs=1..}] raid.start 0
 
-execute if entity @r[scores={raid.start=1}] run scoreboard players set @s raid.knightsrevenant 1
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.1] run scoreboard players set @r[team=raid.team.1,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.2] run scoreboard players set @r[team=raid.team.2,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.3] run scoreboard players set @r[team=raid.team.3,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.4] run scoreboard players set @r[team=raid.team.4,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.5] run scoreboard players set @r[team=raid.team.5,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.6] run scoreboard players set @r[team=raid.team.6,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.7] run scoreboard players set @r[team=raid.team.7,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.8] run scoreboard players set @r[team=raid.team.8,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.9] run scoreboard players set @r[team=raid.team.9,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.10] run scoreboard players set @r[team=raid.team.10,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.11] run scoreboard players set @r[team=raid.team.11,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.12] run scoreboard players set @r[team=raid.team.12,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.13] run scoreboard players set @r[team=raid.team.13,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.knightsrevenant=0}] raid.knightsrevenant 2
-execute if entity @a[scores={raid.knightsrevenant=1},team=raid.team.14] run scoreboard players set @r[team=raid.team.14,scores={raid.knightsrevenant=0}] raid.knightsrevenant 3
-
-scoreboard players set @a[scores={raid.knightsrevenant=1..}] raid.start 0
-
 scoreboard players set @a[scores={raid.shadowkin=1}] raid.data 1
 
 scoreboard players set #njoueurs raid.data 0
@@ -634,15 +532,6 @@ execute if score #njoueurs raid.data matches 30 run team modify raid.sidebar.3 s
 execute if score #njoueurs raid.data matches 31 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"31","color":"white"}]
 execute if score #njoueurs raid.data matches 32 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"32","color":"white"}]
 execute if score #njoueurs raid.data matches 33 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"33","color":"white"}]
-execute if score #njoueurs raid.data matches 34 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"34","color":"white"}]
-execute if score #njoueurs raid.data matches 35 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"35","color":"white"}]
-execute if score #njoueurs raid.data matches 36 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"36","color":"white"}]
-execute if score #njoueurs raid.data matches 37 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"37","color":"white"}]
-execute if score #njoueurs raid.data matches 38 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"38","color":"white"}]
-execute if score #njoueurs raid.data matches 39 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"39","color":"white"}]
-execute if score #njoueurs raid.data matches 40 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"40","color":"white"}]
-execute if score #njoueurs raid.data matches 41 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"41","color":"white"}]
-execute if score #njoueurs raid.data matches 42 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"42","color":"white"}]
 
 scoreboard players set #nteam raid.data 0
 execute as @a[team=raid.team.1] run scoreboard players add #team1 raid.data 1
@@ -656,9 +545,6 @@ execute as @a[team=raid.team.8] run scoreboard players add #team8 raid.data 1
 execute as @a[team=raid.team.9] run scoreboard players add #team9 raid.data 1
 execute as @a[team=raid.team.10] run scoreboard players add #team10 raid.data 1
 execute as @a[team=raid.team.11] run scoreboard players add #team11 raid.data 1
-execute as @a[team=raid.team.12] run scoreboard players add #team12 raid.data 1
-execute as @a[team=raid.team.13] run scoreboard players add #team13 raid.data 1
-execute as @a[team=raid.team.14] run scoreboard players add #team14 raid.data 1
 
 execute if score #team1 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
 execute if score #team2 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
@@ -671,9 +557,6 @@ execute if score #team8 raid.data matches 1.. run scoreboard players add #nteam 
 execute if score #team9 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
 execute if score #team10 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
 execute if score #team11 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
-execute if score #team12 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
-execute if score #team13 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
-execute if score #team14 raid.data matches 1.. run scoreboard players add #nteam raid.data 1
 
 execute if score #nteam raid.data matches 1 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"1","color":"white"}]
 execute if score #nteam raid.data matches 2 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"2","color":"white"}]
@@ -686,9 +569,6 @@ execute if score #nteam raid.data matches 8 run team modify raid.sidebar.4 suffi
 execute if score #nteam raid.data matches 9 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"9","color":"white"}]
 execute if score #nteam raid.data matches 10 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"10","color":"white"}]
 execute if score #nteam raid.data matches 11 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"11","color":"white"}]
-execute if score #nteam raid.data matches 12 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"12","color":"white"}]
-execute if score #nteam raid.data matches 13 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
-execute if score #nteam raid.data matches 14 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"14","color":"white"}]
 
 tag @a[scores={raid.bannerlords=1}] add raid.heritage
 tag @a[scores={raid.highelves=1}] add raid.heritage
