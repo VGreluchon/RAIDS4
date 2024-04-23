@@ -494,8 +494,6 @@ execute if entity @a[scores={raid.orcs=1},team=raid.team.14] run scoreboard play
 
 scoreboard players set @a[scores={raid.orcs=1..}] raid.start 0
 
-scoreboard players set @a[scores={raid.shadowkin=1}] raid.data 1
-
 scoreboard players set #njoueurs raid.data 0
 execute as @a run scoreboard players add #njoueurs raid.data 1
 execute if score #njoueurs raid.data matches 0 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"0","color":"white"}]
@@ -580,6 +578,8 @@ tag @a[scores={raid.ogryntribes=2}] add raid.treasure
 tag @a[scores={raid.dwarves=3}] add raid.treasure
 tag @a[scores={raid.orcs=1}] add raid.treasure
 tag @a[scores={raid.knightsrevenant=1}] add raid.treasure
+
+
 
 execute as @a run function raid_uhc:game/setmarker
 
