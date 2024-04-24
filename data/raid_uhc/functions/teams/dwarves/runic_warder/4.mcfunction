@@ -1,0 +1,1 @@
+kill @a[name="RabbitBeacon"]
