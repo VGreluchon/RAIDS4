@@ -9,6 +9,6 @@ execute if entity @a[scores={raid.orcs=1,raid.death=1}] run attribute @s generic
 execute if entity @a[scores={raid.orcs=1,raid.death=1}] run loot give @s loot raid_uhc:i/galek_axe
 execute if entity @a[scores={raid.orcs=1,raid.death=1}] run tag @s add raid.galek_axe
 
-execute if data entity @s[tag=raid.galek_axe] SelectedItem.tag.raid_uhc.galek_axe as @a[scores={raid.orcs=1..3},distance=..10] run attribute @s generic.attack_damage modifier add a003db96-fa9b-4397-9967-0b05981c3151 "galek_axe" 0.1 multiply_base
+execute if data entity @s[tag=raid.galek_axe] SelectedItem.tag.raid_uhc.galek_axe as @a[scores={raid.orcs=1..3},distance=..10] run attribute @s generic.attack_damage modifier add a003db96-fa9b-4397-9967-0b05981c3151 "galek_axe" 0.2 multiply_base
 execute if data entity @s[tag=raid.galek_axe] SelectedItem.tag.raid_uhc.galek_axe as @a[scores={raid.orcs=1..3},distance=10..] run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
 execute unless data entity @s[tag=raid.galek_axe] SelectedItem.tag.raid_uhc.galek_axe as @a[scores={raid.orcs=1..3}] run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
