@@ -6,5 +6,6 @@
 	execute as @a[scores={raid.role=1..}] run function raid_uhc:game/in-game/roles2
 
 execute if score #started raid.data matches 1.. as @a[scores={raid.death=1}] run function raid_uhc:game/in-game/death
+execute as @a[scores={raid.kill=1}] run function raid_uhc:game/in-game/kill
 
 scoreboard players enable @a raid.role

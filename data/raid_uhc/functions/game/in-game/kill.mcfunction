@@ -7,5 +7,5 @@ execute if score @s raid.orcs matches 1..3 run loot give @s loot raid_uhc:i/gold
 execute if score @s raid.demonspawn matches 1..3 run give @s ender_pearl
 execute if score @s raid.dwarves matches 1..3 run give @s golden_apple
 execute if score @s raid.sacredorder matches 3 run scoreboard players add @s raid.stat 50
-
+scoreboard players set @s raid.kills 1
 scoreboard players set @s raid.kill 0

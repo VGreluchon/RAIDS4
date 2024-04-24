@@ -1,1 +1,3 @@
-summon minecraft:rabbit ~ ~1 ~ {RabbitType:0,CustomName:RabbitBeacon,CustomNameVisible:1,NoAI:1b,Glowing:1,NoGravity:1b,Health:50,Attributes:[{Name:"generic.max_health",Base:50},{Name:"generic.movement_speed",Base:0}],Silent:1,ArmorDropChances:[2F,2F,2F,2F],ArmorItems:[{id:"minecraft:golden_apple",Count:2},{},{},{}],Tags:["raid.beacon"]}
+summon minecraft:rabbit ~ ~1 ~ {RabbitType:0,CustomName:'{"text":"RabbitBeacon"}',CustomNameVisible:1,NoAI:1b,Glowing:1,NoGravity:1b,Health:50,Attributes:[{Name:"generic.max_health",Base:50},{Name:"generic.movement_speed",Base:0}],Silent:1,ArmorDropChances:[2F,2F,2F,2F],ArmorItems:[{id:"minecraft:golden_apple",Count:1},{},{},{}],Tags:["raid.beacon"]}
+scoreboard players set @s raid.cooldown 0
+scoreboard players set @s raid.spell 0

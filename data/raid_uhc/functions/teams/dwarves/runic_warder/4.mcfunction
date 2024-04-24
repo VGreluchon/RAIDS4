@@ -1,1 +1,1 @@
-kill @a[name="RabbitBeacon"]
+kill @e[tag=raid.beacon]

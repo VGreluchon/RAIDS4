@@ -58,4 +58,4 @@ scoreboard players set #day raid.data 0
 time set day
 function raid_uhc:game/started
 
-execute if score #started raid.data matches 1 run function raid_uhc:game/in-game/distrib
+function raid_uhc:game/in-game/distrib
