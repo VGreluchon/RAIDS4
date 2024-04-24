@@ -36,15 +36,6 @@ execute if score #njoueurs raid.data matches 30 run team modify raid.sidebar.3 s
 execute if score #njoueurs raid.data matches 31 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"31","color":"white"}]
 execute if score #njoueurs raid.data matches 32 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"32","color":"white"}]
 execute if score #njoueurs raid.data matches 33 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"33","color":"white"}]
-execute if score #njoueurs raid.data matches 34 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"34","color":"white"}]
-execute if score #njoueurs raid.data matches 35 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"35","color":"white"}]
-execute if score #njoueurs raid.data matches 36 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"36","color":"white"}]
-execute if score #njoueurs raid.data matches 37 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"37","color":"white"}]
-execute if score #njoueurs raid.data matches 38 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"38","color":"white"}]
-execute if score #njoueurs raid.data matches 39 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"39","color":"white"}]
-execute if score #njoueurs raid.data matches 40 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"40","color":"white"}]
-execute if score #njoueurs raid.data matches 41 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"41","color":"white"}]
-execute if score #njoueurs raid.data matches 42 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"42","color":"white"}]
 
 #elim equipe
 execute if entity @s[team=raid.team.1] run scoreboard players remove #team1 raid.data 1
@@ -58,9 +49,6 @@ execute if entity @s[team=raid.team.8] run scoreboard players remove #team8 raid
 execute if entity @s[team=raid.team.9] run scoreboard players remove #team9 raid.data 1
 execute if entity @s[team=raid.team.10] run scoreboard players remove #team10 raid.data 1
 execute if entity @s[team=raid.team.11] run scoreboard players remove #team11 raid.data 1
-execute if entity @s[team=raid.team.12] run scoreboard players remove #team12 raid.data 1
-execute if entity @s[team=raid.team.13] run scoreboard players remove #team13 raid.data 1
-execute if entity @s[team=raid.team.14] run scoreboard players remove #team14 raid.data 1
 
 execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
 execute if entity @s[team=raid.team.2] if score #team2 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
@@ -73,9 +61,6 @@ execute if entity @s[team=raid.team.8] if score #team8 raid.data matches 0 run s
 execute if entity @s[team=raid.team.9] if score #team9 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
 execute if entity @s[team=raid.team.10] if score #team10 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
 execute if entity @s[team=raid.team.11] if score #team11 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
-execute if entity @s[team=raid.team.12] if score #team12 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
-execute if entity @s[team=raid.team.13] if score #team13 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
-execute if entity @s[team=raid.team.14] if score #team14 raid.data matches 0 run scoreboard players remove #nteam raid.data 1
 
 execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"1","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 execute if entity @s[team=raid.team.2] if score #team2 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"2","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
@@ -88,39 +73,31 @@ execute if entity @s[team=raid.team.8] if score #team8 raid.data matches 0 run t
 execute if entity @s[team=raid.team.9] if score #team9 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"9","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 execute if entity @s[team=raid.team.10] if score #team10 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"10","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 execute if entity @s[team=raid.team.11] if score #team11 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"11","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
-execute if entity @s[team=raid.team.12] if score #team12 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"12","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
-execute if entity @s[team=raid.team.13] if score #team13 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"13","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
-execute if entity @s[team=raid.team.14] if score #team14 raid.data matches 0 run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"14","color":"gold"},{"text":" a été éliminée !","color":"aqua"}]
 
 execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.2] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.3] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.4] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.5] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.6] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.7] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.2] if score #team2 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.3] if score #team3 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.4] if score #team4 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.5] if score #team5 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.6] if score #team6 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.7] if score #team7 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.8] if score #team8 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.9] if score #team9 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.10] if score #team10 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
+execute if entity @s[team=raid.team.11] if score #team11 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=2}] raid.stat 1
 
 execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.2] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.3] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.4] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.5] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.6] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.7] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
-execute if entity @s[team=raid.team.1] if score #team1 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.2] if score #team2 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.3] if score #team3 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.4] if score #team4 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.5] if score #team5 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.6] if score #team6 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.7] if score #team7 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.8] if score #team8 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.9] if score #team9 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.10] if score #team10 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+execute if entity @s[team=raid.team.11] if score #team11 raid.data matches 0 run scoreboard players add @a[scores={raid.sacredorder=4}] raid.stat 1
+
 
 execute if score #nteam raid.data matches 1 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"1","color":"white"}]
 execute if score #nteam raid.data matches 2 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"2","color":"white"}]
@@ -133,8 +110,6 @@ execute if score #nteam raid.data matches 8 run team modify raid.sidebar.4 suffi
 execute if score #nteam raid.data matches 9 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"9","color":"white"}]
 execute if score #nteam raid.data matches 10 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"10","color":"white"}]
 execute if score #nteam raid.data matches 11 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"11","color":"white"}]
-execute if score #nteam raid.data matches 12 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"12","color":"white"}]
-execute if score #nteam raid.data matches 13 run team modify raid.sidebar.4 suffix [{"text":"uipes","color":"yellow"},{"text":" » ","color":"gray"},{"text":"13","color":"white"}]
 
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.1,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"1","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team1]","color":"gold"}]
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.2,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"2","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team2]","color":"gold"}]
@@ -147,8 +122,5 @@ execute if score #nteam raid.data matches 1 as @a[team=raid.team.8,scores={raid.
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.9,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"9","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team9]","color":"gold"}]
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.10,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"10","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team10]","color":"gold"}]
 execute if score #nteam raid.data matches 1 as @a[team=raid.team.11,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"11","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team11]","color":"gold"}]
-execute if score #nteam raid.data matches 1 as @a[team=raid.team.12,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"12","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team12]","color":"gold"}]
-execute if score #nteam raid.data matches 1 as @a[team=raid.team.13,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"13","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team13]","color":"gold"}]
-execute if score #nteam raid.data matches 1 as @a[team=raid.team.14,scores={raid.death=0}] run tellraw @a ["",{"text":"L'équipe ","color":"aqua"},{"text":"14","color":"gold"},{"text":" a remporté cette partie de RAID V4 !\nGG à ","color":"aqua"},{"selector":"@a[team=raid.team14]","color":"gold"}]
 
 scoreboard players reset @s
