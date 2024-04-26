@@ -5,7 +5,7 @@ loot give @a[scores={raid.shadowkin=3}] loot raid_uhc:i/glaive
 loot give @a loot raid_uhc:i/power_orb
 loot give @a[scores={raid.skinwalkers=1}] loot raid_uhc:i/claw
 
-give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,Enchantments:[{id:"protection",lvl:4}],RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
+give @a[scores={raid.skinwalkers=3}] leather_chestplate{Unbreakable:1,Enchantments:[{id:"protection",lvl:2}],RepairCost:50,display:{color:11546150,Name:'[{"text":"Taurus Chesplate","italic":false}]',Lore:['[{"text":"RAID ","italic":false,"color":"red"},{"text":"V4","color":"gold"}]']}} 1
 
 give @a[scores={raid.barbarians=1}] elytra{Enchantments:[{id:"protection",lvl:5},{id:"unbreaking",lvl:1}]} 1
 give @a[scores={raid.barbarians=1}] firework_rocket 64
