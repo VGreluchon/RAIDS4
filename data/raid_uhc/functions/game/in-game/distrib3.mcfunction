@@ -83,7 +83,6 @@ tag @a[scores={raid.dwarves=3}] add raid.treasure
 tag @a[scores={raid.orcs=1}] add raid.treasure
 
 
-
 execute as @a run function raid_uhc:game/setmarker
 
 function raid_uhc:game/in-game/roles

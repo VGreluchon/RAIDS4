@@ -120,6 +120,9 @@ execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527028
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527027
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527026
+execute as @a run attribute @s minecraft:generic.movement_speed modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0a
+execute as @a run attribute @s minecraft:generic.armor modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0b
+execute as @a run attribute @s minecraft:generic.attack_damage modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0c
 
 scoreboard players set @a raid.start 1
 
