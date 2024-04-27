@@ -1,7 +1,7 @@
 execute as @a[scores={raid.bannerlords=1..3},distance=..20,tag=!raid.banner] as @s[scores={raid.bannerlords=1..3}] run function raid_uhc:game/in-game/banner
 
 execute if entity @s[tag=raid.heritage] as @a[scores={raid.castle=0},distance=..4,tag=raid.heritage] run tellraw @s ["",{"text":"Récupération de la couronne","color":"red"}]
-execute if entity @s[tag=raid.heritage] as @a[distance=..4,tag=raid.heritage] run scoreboard players add @s raid.castle 1
+execute if entity @s[tag=raid.heritage] as @a[distance=..5,tag=raid.heritage] run scoreboard players add @s raid.castle 1
 execute as @a[scores={raid.castle=1}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 1/30","color":"aqua"}]
 execute as @a[scores={raid.castle=2}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 2/30","color":"aqua"}]
 execute as @a[scores={raid.castle=3}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 3/30","color":"aqua"}]
@@ -19,7 +19,7 @@ execute as @a[scores={raid.castle=14}] run tellraw @s ["",{"text":"Crown","color
 execute as @a[scores={raid.castle=15}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 15/30","color":"aqua"}]
 execute as @a[scores={raid.castle=16}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 16/30","color":"aqua"}]
 execute as @a[scores={raid.castle=17}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 17/30","color":"aqua"}]
-execute as @a[scores={raid.castle=18}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 1830","color":"aqua"}]
+execute as @a[scores={raid.castle=18}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 18/30","color":"aqua"}]
 execute as @a[scores={raid.castle=19}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 19/30","color":"aqua"}]
 execute as @a[scores={raid.castle=20}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 20/30","color":"aqua"}]
 execute as @a[scores={raid.castle=21}] run tellraw @s ["",{"text":"Crown","color":"red"},{"text":" 21/30","color":"aqua"}]
@@ -36,10 +36,10 @@ execute as @a[scores={raid.castle=30}] run tellraw @s ["",{"text":"Crown","color
 execute if entity @s[tag=raid.heritage] as @a[scores={raid.castle=1..},distance=5..,tag=raid.heritage] run tellraw @s ["",{"text":"Trop éloigné, récupération réinitialisée","color":"red"}]
 execute if entity @s[tag=raid.heritage] as @a[scores={raid.castle=1..},distance=5..,tag=raid.heritage] run scoreboard players set @s raid.castle 0
 
-execute if entity @a[scores={raid.castle=30}] run tag @e[type=armor_stand,tag=castle] remove raid.heritage
+execute if entity @a[scores={raid.castle=30}] run tag @a[tag=raid.heritage] remove raid.heritage
 execute as @a[scores={raid.castle=30}] run loot give @s loot raid_uhc:i/crown
 
-execute as @a[tag=raid.treasure,distance=..20] run function raid_uhc:game/in-game/treasure
+execute at @e[type=armor_stand,tag=treasure2] as @a[tag=raid.treasure,distance=..20] run function raid_uhc:game/in-game/treasure
 
 scoreboard players add @e[type=armor_stand,tag=treasure] raid.cooldown 1
 execute as @e[type=armor_stand,tag=treasure,limit=1] if score @s raid.cooldown matches 90 run tellraw @a ["",{"text":"Le trésor du chateau se situe aux coordonnées suivantes:","color":"aqua"},{"text":"\n"},{"text":"X=","color":"red"},{"score":{"name":"@s","objective":"raid.data"},"color":"gold"},{"text":" Y=","color":"red"},{"score":{"name":"@s","objective":"raid.sprint"},"color":"gold"},{"text":" Z=","color":"red"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"}]

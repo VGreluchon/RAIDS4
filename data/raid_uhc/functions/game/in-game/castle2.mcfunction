@@ -1,3 +1,3 @@
-tellraw @a ["",{"text":"Le chateau des Banner Lords est apparu aux coordonées suivantes:","color":"aqua"},{"text":"\n"},{"text":"X=","color":"red"},{"score":{"name":"@s","objective":"raid.data"},"color":"gold"},{"text":" Y=","color":"red"},{"score":{"name":"@s","objective":"raid.sprint"},"color":"gold"},{"text":" Z=","color":"red"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"}]
+execute as @e[type=armor_stand,tag=castle] run tellraw @a ["",{"text":"Le chateau des Banner Lords est apparu aux coordonées suivantes:","color":"aqua"},{"text":"\n"},{"text":"X=","color":"red"},{"score":{"name":"@s","objective":"raid.data"},"color":"gold"},{"text":" Y=","color":"red"},{"score":{"name":"@s","objective":"raid.sprint"},"color":"gold"},{"text":" Z=","color":"red"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"}]
 place template raid_uhc:castle ~-9 ~-5 ~-7
 tag @s add raid.crown
