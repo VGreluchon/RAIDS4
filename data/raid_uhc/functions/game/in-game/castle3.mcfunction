@@ -1,4 +1,4 @@
-execute as @a[scores={raid.bannerlords=1..3},distance=..20,tag=!raid.banner] run function raid_uhc:game/in-game/banner
+execute as @a[scores={raid.bannerlords=1..3},distance=..20,tag=!raid.banner] as @s[scores={raid.bannerlords=1..3}] run function raid_uhc:game/in-game/banner
 
 execute if entity @s[tag=raid.crown] as @a[scores={raid.castle=0},distance=..4,tag=raid.heritage] run tellraw @s ["",{"text":"Récupération de la couronne","color":"red"}]
 execute if entity @s[tag=raid.crown] as @a[distance=..4,tag=raid.heritage] run scoreboard players add @s raid.castle 1
