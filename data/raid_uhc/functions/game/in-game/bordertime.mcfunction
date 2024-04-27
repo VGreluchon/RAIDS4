@@ -95,7 +95,7 @@ execute if score #border_timer raid.data matches 5400 run team modify raid.sideb
 
 execute if score #border_timer raid.data matches 510 run function raid_uhc:game/in-game/castle1
 execute if score #border_timer raid.data matches 420 as @e[type=armor_stand,tag=castle] run function raid_uhc:game/in-game/castle2
-execute if score #border_timer raid.data matches ..420 run function raid_uhc:game/in-game/castle3
+execute if score #border_timer raid.data matches ..420 at @e[type=armor_stand,tag=castle] run function raid_uhc:game/in-game/castle3
 
 
 execute if score #border_timer raid.data matches 0 run tellraw @a ["",{"text":"Bordure:","color":"red"},{"text":" 1250 x 1250 \u226b 150 x 150","color":"gold"},{"text":"\n"},{"text":"Durée:","color":"red"},{"text":" 30 minutes","color":"gold"}]

@@ -1,5 +1,5 @@
 spreadplayers ~ ~ 40 150 true @s
-tp @s ~ ~5 ~
+execute at @s run tp @s ~ ~5 ~
 
 execute at @s store result score @s raid.x run data get entity @s Pos[0]
 execute at @s store result score @s raid.y run data get entity @s Pos[1]

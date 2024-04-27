@@ -3,10 +3,11 @@ scoreboard players set #state raid.data 1
 
 ##Téléportation et clear des joueurs
 #spreadplayers 0 0 250 1250 true @a
+clear @a
 give @a cooked_beef 48
-give @a apple 10
+give @a apple 24
 give @a book 1
-
+kill @e[type=armor_stand]
 ##Timer et Scoreboard
 scoreboard objectives remove raid.sidebar
 scoreboard objectives add raid.sidebar dummy [{"text":"RAID UHC","color":"red","bold":true},{"text":" V4","color":"gold","bold":true}]

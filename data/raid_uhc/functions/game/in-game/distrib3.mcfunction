@@ -36,6 +36,17 @@ execute if score #njoueurs raid.data matches 32 run team modify raid.sidebar.3 s
 execute if score #njoueurs raid.data matches 33 run team modify raid.sidebar.3 suffix [{"text":"ueurs","color":"yellow"},{"text":" » ","color":"gray"},{"text":"33","color":"white"}]
 
 scoreboard players set #nteam raid.data 0
+scoreboard players set #team1 raid.data 0
+scoreboard players set #team2 raid.data 0
+scoreboard players set #team3 raid.data 0
+scoreboard players set #team4 raid.data 0
+scoreboard players set #team5 raid.data 0
+scoreboard players set #team6 raid.data 0
+scoreboard players set #team7 raid.data 0
+scoreboard players set #team8 raid.data 0
+scoreboard players set #team9 raid.data 0
+scoreboard players set #team10 raid.data 0
+scoreboard players set #team11 raid.data 0
 execute as @a[team=raid.team.1] run scoreboard players add #team1 raid.data 1
 execute as @a[team=raid.team.2] run scoreboard players add #team2 raid.data 1
 execute as @a[team=raid.team.3] run scoreboard players add #team3 raid.data 1

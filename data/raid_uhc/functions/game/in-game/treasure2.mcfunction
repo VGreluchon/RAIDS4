@@ -1,6 +1,6 @@
 spreadplayers ~ ~ 40 150 true @s
-tp @s ~ ~1 ~
-place template raid_uhc:treasure ~-5 ~-7 ~-5
+execute at @s run tp @s ~ ~1 ~
+execute at @s run place template raid_uhc:treasure ~-5 ~-7 ~-5
 
 execute at @s store result score @s raid.x run data get entity @s Pos[0]
 execute at @s store result score @s raid.y run data get entity @s Pos[1]
