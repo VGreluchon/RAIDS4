@@ -42,4 +42,9 @@ execute as @a[scores={raid.castle=30}] run function raid_uhc:game/in-game/crown
 execute at @e[type=armor_stand,tag=treasure2] as @a[tag=raid.treasure,distance=..20] run function raid_uhc:game/in-game/treasure
 
 scoreboard players add @e[type=armor_stand,tag=treasure] raid.cooldown 1
+
+execute at @e[type=armor_stand,tag=treasure,limit=1] store result score @s raid.x run data get entity @s Pos[0]
+execute at @e[type=armor_stand,tag=treasure,limit=1] store result score @s raid.y run data get entity @s Pos[1]
+execute at @e[type=armor_stand,tag=treasure,limit=1] store result score @s raid.z run data get entity @s Pos[2]
+
 execute as @e[type=armor_stand,tag=treasure,limit=1] at @s if score @s raid.cooldown matches 90 run tellraw @a ["",{"text":"Le trésor du chateau se situe aux coordonnées suivantes:","color":"aqua"},{"text":"\n"},{"text":"X=","color":"red"},{"score":{"name":"@s","objective":"raid.data"},"color":"gold"},{"text":" Y=","color":"red"},{"score":{"name":"@s","objective":"raid.sprint"},"color":"gold"},{"text":" Z=","color":"red"},{"score":{"name":"@s","objective":"raid.stat"},"color":"gold"}]
