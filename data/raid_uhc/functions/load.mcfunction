@@ -73,6 +73,18 @@ team modify raid.team.9 nametagVisibility hideForOtherTeams
 team modify raid.team.10 nametagVisibility hideForOtherTeams
 team modify raid.team.11 nametagVisibility hideForOtherTeams
 
+team modify raid.team.1 color yellow
+team modify raid.team.2 color white
+team modify raid.team.3 color red
+team modify raid.team.4 color light_purple
+team modify raid.team.5 color green
+team modify raid.team.6 color gray
+team modify raid.team.7 color gold
+team modify raid.team.8 color blue
+team modify raid.team.9 color dark_red
+team modify raid.team.10 color dark_purple
+team modify raid.team.11 color dark_gray
+
 
 #define storage raid_uhc:main
 
