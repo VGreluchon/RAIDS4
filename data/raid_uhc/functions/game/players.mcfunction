@@ -30,13 +30,13 @@ execute as @s[scores={raid.skinwalkers=1}] run function raid_uhc:teams/skinwalke
 execute as @s[scores={raid.skinwalkers=2}] run function raid_uhc:teams/skinwalkers/taurus/1
 execute as @s[scores={raid.skinwalkers=3}] run function raid_uhc:teams/skinwalkers/yaga/1
 
-execute as @s[scores={raid.demonspawn=1}] run function raid_uhc:teams/demonspawn/kymar/1
+execute as @s[scores={raid.demonspawn=3}] run function raid_uhc:teams/demonspawn/kymar/1
 execute as @s[scores={raid.demonspawn=2}] run function raid_uhc:teams/demonspawn/inithwe/1
-execute as @s[scores={raid.demonspawn=3}] run function raid_uhc:teams/demonspawn/drexthar/1
+execute as @s[scores={raid.demonspawn=1}] run function raid_uhc:teams/demonspawn/drexthar/1
 
-execute as @s[scores={raid.dwarves=1}] run function raid_uhc:teams/dwarves/tormin/1
+execute as @s[scores={raid.dwarves=3}] run function raid_uhc:teams/dwarves/tormin/1
 execute as @s[scores={raid.dwarves=2}] run function raid_uhc:teams/dwarves/mountain_king/1
-execute as @s[scores={raid.dwarves=3}] run function raid_uhc:teams/dwarves/runic_warder/1
+execute as @s[scores={raid.dwarves=1}] run function raid_uhc:teams/dwarves/runic_warder/1
 
 execute as @s[scores={raid.undeadhordes=1}] run function raid_uhc:teams/undead_hordes/crypt_king/1
 execute as @s[scores={raid.undeadhordes=2}] run function raid_uhc:teams/undead_hordes/rotos/1

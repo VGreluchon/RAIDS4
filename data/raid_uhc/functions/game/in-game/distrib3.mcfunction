@@ -85,12 +85,12 @@ execute if score #nteam raid.data matches 11 run team modify raid.sidebar.4 suff
 
 tag @a[scores={raid.bannerlords=1}] add raid.heritage
 tag @a[scores={raid.highelves=1}] add raid.heritage
-tag @a[scores={raid.demonspawn=1}] add raid.heritage
+tag @a[scores={raid.demonspawn=3}] add raid.heritage
 tag @a[scores={raid.dwarves=2}] add raid.heritage
 tag @a[scores={raid.undeadhordes=1}] add raid.heritage
 
 tag @a[scores={raid.ogryntribes=2}] add raid.treasure
-tag @a[scores={raid.dwarves=3}] add raid.treasure
+tag @a[scores={raid.dwarves=1}] add raid.treasure
 tag @a[scores={raid.orcs=1}] add raid.treasure
 
 
