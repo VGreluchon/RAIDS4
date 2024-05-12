@@ -1,5 +1,5 @@
 
-summon minecraft:fireball ~ ~1 ~ {ExplosionPower:3}
+summon minecraft:fireball ~ ~1 ~ {ExplosionPower:2}
 tag @e[type=fireball,distance=..2] add raid.fireball
 tp @e[type=fireball,tag=raid.fireball] @s
 execute as @e[type=fireball,tag=raid.fireball] run tp @s ^ ^1.55 ^

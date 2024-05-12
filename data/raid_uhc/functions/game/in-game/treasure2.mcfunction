@@ -1,4 +1,4 @@
-spreadplayers ~ ~ 150 400 true @s
+spreadplayers ~ ~ 60 250 true @s
 execute at @s run tp @s ~ ~1 ~
 execute at @s run place template raid_uhc:treasure ~-5 ~-7 ~-5
 

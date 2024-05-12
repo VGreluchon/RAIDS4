@@ -14,9 +14,9 @@ execute as @s[scores={raid.sacredorder=4}] run function raid_uhc:teams/sacred_or
 execute as @s[scores={raid.sacredorder=4}] run function raid_uhc:teams/sacred_order/venus/1
 execute as @s[scores={raid.sacredorder=3}] run function raid_uhc:teams/sacred_order/sir_nicholas/1
 
-execute as @s[scores={raid.barbarians=1}] run function raid_uhc:teams/barbarians/scyl/1
+execute as @s[scores={raid.barbarians=3}] run function raid_uhc:teams/barbarians/scyl/1
 execute as @s[scores={raid.barbarians=2}] run function raid_uhc:teams/barbarians/altan/1
-execute as @s[scores={raid.barbarians=3}] run function raid_uhc:teams/barbarians/rage_monger/1
+execute as @s[scores={raid.barbarians=1}] run function raid_uhc:teams/barbarians/rage_monger/1
 
 execute as @s[scores={raid.ogryntribes=1}] run function raid_uhc:teams/ogryn_tribes/magmablood/1
 execute as @s[scores={raid.ogryntribes=2}] run function raid_uhc:teams/ogryn_tribes/shamrock/1

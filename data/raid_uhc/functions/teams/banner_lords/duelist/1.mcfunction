@@ -3,10 +3,10 @@ function raid_uhc:teams/banner_lords/passif
 execute at @a[distance=1..20] unless score @s raid.bannerlords matches 1..2 as @a[scores={raid.bannerlords=3}] run attribute @s minecraft:generic.attack_damage modifier add 1-1-1-1-1 "uwu20" 0.20 multiply_base
 execute at @a[distance=1..20] if score @s raid.bannerlords matches 1..2 as @a[scores={raid.bannerlords=3}] run attribute @s minecraft:generic.attack_damage modifier remove 1-1-1-1-1
 
-#En utilisant son orbe de pouvoir, pendant 10 secondes, lorsqu’elle prend des dégâts, elle a 35% de chances de recevoir l’effet Force pendant 3 secondes(15 minutes de délai de récupération)
-execute if score @s[scores={raid.spell=1..}] raid.cooldown matches ..899 run scoreboard players set @s raid.spell 0
-execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 900.. run function raid_uhc:teams/banner_lords/duelist/2
+#En utilisant son orbe de pouvoir, pendant 10 secondes, lorsqu’elle prend des dégâts, elle a 50% de chances de recevoir l’effet regeneration pendant 3 secondes(7 minutes de délai de récupération)
+execute if score @s[scores={raid.spell=1..}] raid.cooldown matches ..419 run scoreboard players set @s raid.spell 0
+execute if score @s[scores={raid.spell=1..}] raid.cooldown matches 420.. run function raid_uhc:teams/banner_lords/duelist/2
 
 #Txt capacité prête ou non:
-execute if score @s raid.cooldown matches ..899 run title @s actionbar ["",{"text":"Riposte: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/900","color":"#0F6FD8"}]
-execute if score @s raid.cooldown matches 900.. run title @s actionbar ["",{"text":"Riposte: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]
+execute if score @s raid.cooldown matches ..419 run title @s actionbar ["",{"text":"Healback: ","color":"#0F6FD8"},{"score":{"name":"@s","objective":"raid.cooldown"},"color":"gold"},{"text":"/420","color":"#0F6FD8"}]
+execute if score @s raid.cooldown matches 420.. run title @s actionbar ["",{"text":"Healback: ","color":"#0F6FD8"},{"text":"Ready","color":"gold"}]

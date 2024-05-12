@@ -1,7 +1,7 @@
 function raid_uhc:teams/ogryn_tribes/passif
 #Il est insensible au feu et donne cet insensibilité à ses alliés qui sont dans un rayon de 10 bloc
 effect give @s fire_resistance 5 0 true
-execute at @a[scores={raid.ogryntribes=1..},distance=..10] run effect give @s fire_resistance 3 0 true
+execute at @a[scores={raid.ogryntribes=1..},distance=..20] run effect give @s fire_resistance 3 0 true
 
 #En utilisant son orbe de pouvoir, il pose du feu autour de lui pdt 10 secondes. Dans cette arène, les ennemis sont constamment enflammés et ne peuvent s’éteindre (30 minutes de délai de récupération)
 execute if score @s raid.spell matches 1 if score @s raid.cooldown matches 600.. run function raid_uhc:teams/ogryn_tribes/magmablood/2

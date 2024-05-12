@@ -30,6 +30,8 @@ execute if entity @s[scores={raid.kill=1..}] run attribute @s generic.max_health
 execute if entity @s[scores={raid.kill=1..}] run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527027
 execute if entity @s[scores={raid.kill=1..}] run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527026
 execute if entity @s[scores={raid.kill=1..}] run effect give @s instant_health 2 10 true
+execute if entity @s[scores={raid.kill=1..}] run effect give @s mining_fatigue 10 100 true
+execute if entity @s[scores={raid.kill=1..}] run effect give @s weakness 10 100 true
 
 #En tuant un joueur, il obtient sa tête avec laquelle il pourra faire une golden Head qui lui rendra 6♥ une fois mangée.
 

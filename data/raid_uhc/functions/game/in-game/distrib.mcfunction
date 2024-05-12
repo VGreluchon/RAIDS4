@@ -13,21 +13,23 @@ scoreboard players set @a raid.orcs 0
 scoreboard players set @a raid.stat 0
 scoreboard players set @a raid.data 0
 scoreboard players set @a raid.death 0
+scoreboard players set @a raid.kills 0
+scoreboard players set @a raid.kill 0
 scoreboard players set @a raid.cooldown 0
 scoreboard players set @a raid.cooldown2 0
+scoreboard players set @a raid.trigger1 0
+scoreboard players set @a raid.trigger2 0
+scoreboard players set @a raid.trigger3 0
+scoreboard players set @a raid.trigger4 0
 
 tag @a remove raid.shield_stick
 tag @a remove raid.obsidian_sword
 tag @a remove raid.end_sir_nicholas
 tag @a remove raid.elytra
 tag @a remove raid.heritage
+tag @a remove raid.banner
 tag @a remove raid.treasure
-tag @a remove raid.regen
-tag @a remove raid.resi
-tag @a remove raid.force
-tag @a remove raid.speed
 execute as @a run attribute @s generic.attack_damage modifier remove 1-1-1-1-1
-execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
 execute as @a run attribute @s generic.max_health modifier remove 1947c83f-37ad-4371-8fa0-aeff6a5ba601
 execute as @a run attribute @s generic.max_health modifier remove 1947c83f-37ad-4371-8fa0-aeff6a5ba602
 execute as @a run attribute @s generic.max_health modifier remove 1947c83f-37ad-4371-8fa0-aeff6a5ba603
@@ -85,7 +87,7 @@ execute as @a run attribute @s generic.attack_damage modifier remove 2-1-0-0-6
 execute as @a run attribute @s generic.attack_damage modifier remove 2-1-0-0-7
 execute as @a run attribute @s generic.attack_damage modifier remove 2-1-0-0-8
 execute as @a run attribute @s generic.attack_damage modifier remove 2-1-0-0-9
-execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
+execute as @a run attribute @s generic.attack_damage modifier remove 2-2-0-1-0
 execute as @a run attribute @s generic.max_health modifier remove 5b89aa77-f19f-4c08-8cb5-b428da98bd01
 execute as @a run attribute @s generic.max_health modifier remove 5b89aa77-f19f-4c08-8cb5-b428da98bd02
 execute as @a run attribute @s generic.max_health modifier remove 5b89aa77-f19f-4c08-8cb5-b428da98bd03
@@ -120,9 +122,14 @@ execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527028
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527027
 execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527026
+execute as @a run attribute @s generic.max_health modifier remove 3dd75367-2250-4ac8-a337-7a4a01527114
 execute as @a run attribute @s minecraft:generic.movement_speed modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0a
 execute as @a run attribute @s minecraft:generic.armor modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0b
 execute as @a run attribute @s minecraft:generic.attack_damage modifier remove 23458bc9-3fba-4ec7-a5d4-c067825f2d0c
+execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3151
+execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3153
+execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3155
+execute as @a run attribute @s generic.attack_damage modifier remove a003db96-fa9b-4397-9967-0b05981c3157
 
 scoreboard players set @a raid.start 1
 
