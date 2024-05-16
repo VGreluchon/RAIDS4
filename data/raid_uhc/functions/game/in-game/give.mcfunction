@@ -1,3 +1,8 @@
+give @a cooked_beef 48
+give @a apple 24
+give @a book 3
+give @a bow
+give @a arrow 32
 
 loot give @a[scores={raid.bannerlords=2}] loot raid_uhc:i/glaive
 loot give @a[scores={raid.barbarians=1}] loot raid_uhc:i/glaive

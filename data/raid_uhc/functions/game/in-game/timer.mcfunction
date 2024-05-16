@@ -1228,6 +1228,7 @@ execute if score #temps raid.data matches 1199 run team modify raid.sidebar.1 su
 execute if score #temps raid.data matches 1200 run team modify raid.sidebar.1 suffix [{"text":"mps","color":"yellow"},{"text":" » ","color":"gray"},{"text":"20:00","color":"green"}]
 
 execute if score #temps raid.data matches 0 run scoreboard players add #episode raid.data 1
+execute if score #episode raid.data matches 2 if score #temps raid.data matches 0 run effect give @a instant_health 1 10 true
 execute if score #temps raid.data matches 0 run scoreboard players set #temps raid.data 1200
 
 execute if score #episode raid.data matches 1 run team modify raid.sidebar.2 suffix [{"text":"isode","color":"yellow"},{"text":" » ","color":"gray"},{"text":"2","color":"white"}]
