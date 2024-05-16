@@ -1,7 +1,7 @@
 function raid_uhc:teams/shadowkin/passif
-#Quand il a moins de 5♥, les deux formes sont activés
-execute if score @s raid.life matches 11.. run scoreboard players set @s raid.stat 0
-execute if score @s raid.life matches ..10 run scoreboard players set @s raid.stat 1
+#Quand il a moins de 3,5♥, les deux formes sont activés
+execute if score @s raid.life matches 8.. run scoreboard players set @s raid.stat 0
+execute if score @s raid.life matches ..7 run scoreboard players set @s raid.stat 1
 #Frog shifter: Avec son orbe de pouvoir, il alterne entre deux formes:
 execute if score @s raid.data matches 0 run scoreboard players set @s raid.data 1
 #- La grenouille : il obtient les effet Jump Boost 3 et Vitesse II, après un saut, il obtient un effet de Force I pendant 3 secondes.

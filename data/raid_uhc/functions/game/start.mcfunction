@@ -2,13 +2,13 @@
 scoreboard players set #state raid.data 1
 
 ##Téléportation et clear des joueurs
-#spreadplayers 0 0 250 1250 true @a
+#spreadplayers 0 0 300 1250 true @a
 clear @a
 
 kill @e[type=armor_stand]
 ##Timer et Scoreboard
 scoreboard objectives remove raid.sidebar
-scoreboard objectives add raid.sidebar dummy [{"text":"RAID UHC","color":"red","bold":true},{"text":" V4","color":"gold","bold":true}]
+scoreboard objectives add raid.sidebar dummy [{"text":"RAID UHC","color":"red","bold":true},{"text":" V4.1","color":"gold","bold":true}]
 scoreboard players set ▬▬ raid.sidebar 7
 scoreboard players set Bo raid.sidebar 6
 scoreboard players set Ta raid.sidebar 5
