@@ -17,7 +17,7 @@ give @a[scores={raid.barbarians=3}] firework_rocket 32
 give @a[scores={raid.orcs=3}] iron_helmet{Unbreakable:1,display:{Name:'[{"text":"Spike Helmet","italic":false}]',Lore:['[{"text":"RAID","italic":false,"color":"red"},{"text":" V4","color":"gold"}]']},Enchantments:[{id:"protection",lvl:4},{id:"thorns",lvl:3}]} 1
 
 execute as @a unless score @s raid.orcs matches 1.. unless score @s raid.sacredorder matches 1.. unless score @s raid.undeadhordes matches 3 run attribute @s generic.max_health base set 30
-execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 26
+execute as @a if score @s raid.orcs matches 1.. run attribute @s generic.max_health base set 24
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.max_health base set 32
 execute as @a if score @s raid.sacredorder matches 1.. run attribute @s generic.attack_damage modifier add 2-2-0-1-0 "10SO" 0.10 multiply_base
 execute as @a if score @s raid.undeadhordes matches 3 run attribute @s generic.max_health base set 40
