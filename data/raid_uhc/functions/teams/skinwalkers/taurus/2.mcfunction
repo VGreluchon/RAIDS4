@@ -1,5 +1,5 @@
 particle minecraft:poof ~ ~ ~ 0.5 0.5 0.5 1 50
-execute rotated
+
 execute on attacker run effect give @s levitation 4 2 true
 execute on attacker run effect give @s resistance 4 2 true
 scoreboard players set @s raid.shield 0
